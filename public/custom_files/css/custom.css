@@ -1,0 +1,95 @@
+/* this is my custom CSS */
+
+.post{
+	height: 300px;
+	width: 250px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/*
+ * right post
+ */
+.post_float_left{
+	float: left;
+	width: 30%;
+}
+
+.post_float_left_image img{
+	width: 100%;
+}
+
+.post_float_left_type{
+	float:left;
+}
+
+.post_float_right_level{
+	float:right;
+}
+
+/*
+ * left post
+ */
+.post_float_right{
+	float: right;
+	width: 70%;
+}
+
+.post_float_right_name{
+	height: 20%;
+	background-color: black;
+	padding: 2px;
+	text-align: center;
+	color: white;
+}
+
+.post_float_right_description{
+	height: 80%;
+}
+
+/*
+ * Miscellaneous 
+ */
+.clear{
+	clear: both;
+}
+
+img{
+
+}
+
+.jumbotron{
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position:center; 
+	height:800px;
+}
+
+
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid black;
+	color: black;
+	text-align: center;
+}
+
+
+* {
+ font-family: sans-serif;
+}
+
+
+#logo{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+#search_partner{
+	margin: auto;
+}
+
+#search_coach{
+	margin: auto;
+}

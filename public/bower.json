@@ -1,0 +1,21 @@
+{
+  "name": "yichen",
+  "version": "1.0",
+  "homepage": "https://github.com/yichenzhu1337/ping_pong_partners",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
