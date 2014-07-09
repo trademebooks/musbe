@@ -17,7 +17,7 @@ class PostsController extends \BaseController {
 		$posts = $this->post->all();
 
 		//return compact('posts');
-		return View::make('posts.index', compact('posts'));
+		return View::make('posts.index', compact('posts'));  // ['posts' => $posts]//
 	}
 
 	/**

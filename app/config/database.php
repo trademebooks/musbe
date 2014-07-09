@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'ping_pong_partners',
+			'database'  => 'musbe',
 			'username'  => 'root',
 			'password'  => 'root',
 			'charset'   => 'utf8',

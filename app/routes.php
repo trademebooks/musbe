@@ -16,9 +16,5 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::get('/test', function()
-{
-	return View::make('test');
-});
-
 Route::resource('posts', 'PostsController');
+Route::resource('authentication', 'AuthenticationsController');
