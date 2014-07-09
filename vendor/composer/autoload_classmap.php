@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Acme\\Repositories\\PostsController' => $baseDir . '/app/controllers/PostsController.php',
     'Authentication' => $baseDir . '/app/models/Authentication.php',
     'AuthenticationsController' => $baseDir . '/app/controllers/AuthenticationsController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
@@ -30,9 +31,9 @@ return array(
     'MigrationCartalystSentryInstallUsers' => $vendorDir . '/cartalyst/sentry/src/migrations/2012_12_06_225921_migration_cartalyst_sentry_install_users.php',
     'MigrationCartalystSentryInstallUsersGroupsPivot' => $vendorDir . '/cartalyst/sentry/src/migrations/2012_12_06_225945_migration_cartalyst_sentry_install_users_groups_pivot.php',
     'Post' => $baseDir . '/app/models/Post.php',
-    'PostsController' => $baseDir . '/app/controllers/PostsController.php',
     'PostsTableSeeder' => $baseDir . '/app/database/seeds/PostsTableSeeder.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
+    'Symfony\\Component\\HttpFoundation\\Resources\\stubs\\FakeFile' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/FakeFile.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'User' => $baseDir . '/app/models/User.php',
     'Whoops\\Module' => $vendorDir . '/filp/whoops/src/deprecated/Zend/Module.php',

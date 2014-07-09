@@ -1,12 +1,17 @@
-<?php
+<?php 
+namespace Acme\Repositories\PostRepositoryInterface;
 
-class PostsController extends \BaseController {
+class PostsController extends BaseController {
 
-	protected $post;
+	public $post;
 
-	public function __construct(Post $post) {
+	public function __construct(Post $post) 
+	{
+		
 		$this->post = $post;
+
 	}
+
 	/**
 	 * Display a listing of posts
 	 *
@@ -14,10 +19,10 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = $this->post->all();
-
+		//$posts = $this->post->getAll();
+		//dd($posts);
 		//return compact('posts');
-		return View::make('posts.index', compact('posts'));  // ['posts' => $posts]//
+		//return View::make('posts.index', compact('posts'));  // ['posts' => $posts]//
 	}
 
 	/**
