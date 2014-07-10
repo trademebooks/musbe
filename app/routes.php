@@ -1,6 +1,6 @@
 <?php
 
-//App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
+App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
 
 Route::get('/', function()
 {
