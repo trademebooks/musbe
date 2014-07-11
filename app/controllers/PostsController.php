@@ -1,5 +1,6 @@
 <?php 
-namespace Acme\Repositories\PostRepositoryInterface;
+
+//use Acme\Repositories\PostRepositoryInterface;
 
 class PostsController extends BaseController {
 

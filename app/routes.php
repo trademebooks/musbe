@@ -1,6 +1,6 @@
 <?php
 
-//App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
+App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
 
 Route::get('/', function()
 {
@@ -9,8 +9,9 @@ Route::get('/', function()
 
 Route::get('test', function(){
 
-	new Acme\Repositories\DbPostRepository;
+	return 'hi';
 });
+
 Route::resource('posts', 'PostsController');
 Route::resource('authentication', 'AuthenticationsController');
 
