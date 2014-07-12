@@ -64,6 +64,10 @@ Route::get('test', function(){
 
 });
 
+Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
+/*
+ * Wildcards all last so you do not overwrite anything up top
+ */
 
 
 /*

@@ -2,18 +2,22 @@
 
 @section('content')
 
-Login
-<form action="" method="post">
-	email
-	<br>
-	<input type="password" name="email">
+<div class="centered">
+	Login
 	<br><br>
-	password
-	<br>
-	<input type="password" name="password">
-	<input type="submit">
 
-	{{ Form::token() }}
-</form>
+	<form action="" method="post">
+
+		<input type="text" name="email" placeholder="Email" size="35">
+		<br><br>
+
+		<input type="password" name="password" placeholder="Password" size="35">
+		<br><br>
+
+		<input type="submit" value="Login">
+
+		{{ Form::token() }}
+	</form>
+</div>
 
 @stop

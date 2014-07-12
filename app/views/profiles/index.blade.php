@@ -1,0 +1,1 @@
+C:\wamp\www\github\musbe\app/views/profiles/index.blade.php

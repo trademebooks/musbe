@@ -88,3 +88,16 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/*
+Route::filter('currentUser', function($route)
+{
+    if (!Sentry::check()) return Redirect::home();
+
+    if (Auth::user()->username !== $route->parameter('profile'))
+    {
+        return Redirect::home();
+    }
+});
+
+*/

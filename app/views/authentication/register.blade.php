@@ -7,10 +7,15 @@
 	<br><br>
 
 	<form action="" method="post">
-		
-		<input type="text" name="email" placeholder="Email" size="35">
+
+		<input type="text" name="username" placeholder="Username" size="35">
 		<br>
 		{{ $errors->first('username', '<span class="error">:message</span>') }}
+		<br><br>
+
+		<input type="text" name="email" placeholder="Email" size="35">
+		<br>
+		{{ $errors->first('email', '<span class="error">:message</span>') }}
 		<br><br>
 
 		<input type="password" name="password" placeholder="Password" size="35">
@@ -18,7 +23,7 @@
 		{{ $errors->first('password', '<span class="error">:message</span>') }}
 		<br><br>
 
-		<input type="password" name="password_again" placehold="Confirm Password" size="35">
+		<input type="password" name="password_again" placeholder="Confirm Password" size="35">
 		<br>
 		{{ $errors->first('password_again', '<span class="error">:message</span>') }}
 		<br><br>
@@ -27,7 +32,6 @@
 
 		{{ Form::token() }}
 	</form>
-
 
 	<hr>
 

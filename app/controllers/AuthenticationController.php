@@ -62,11 +62,13 @@ class AuthenticationController extends \BaseController {
 	public function postRegister()
 	{
 
+		$username = Input::get('username');
 		$email = Input::get('email');
 		$password = Input::get('password');
 		$password_again = Input::get('password_again');
 
 		$validate= array(
+			'username' => $username,
 		    'email'    => $email,
 		    'password' => $password,
 		    'password_again' => $password_again,
@@ -74,6 +76,7 @@ class AuthenticationController extends \BaseController {
 		);
 
 		$credentials = array(
+			'username' => $username,
 		    'email'    => $email,
 		    'password' => $password,
 		    'activated' => true
