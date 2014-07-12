@@ -4,7 +4,7 @@ use Acme\Repositories\PostRepositoryInterface;
 
 class PostsController extends \BaseController {
 
-	public $post;
+	protected $post;
 
 	public function __construct(PostRepositoryInterface $post) 
 	{
@@ -19,9 +19,7 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		$posts = $this->post->getAll();
-		dd($posts);
-		//return compact('posts');
-		//return View::make('posts.index', compact('posts'));  // ['posts' => $posts]//
+		return View::make('posts.index', compact('posts'));  // ['posts' => $posts]//
 	}
 
 	/**

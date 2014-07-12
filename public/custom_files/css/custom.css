@@ -1,5 +1,8 @@
 /* this is my custom CSS */
 
+body{
+	padding-top: 50px;
+}
 .post{
 	height: 300px;
 	width: 250px;
@@ -59,10 +62,11 @@ img{
 }
 
 .jumbotron{
-	background-image: url(../images/background.jpg);
+	background-image: url(../images/home.png);
 	background-repeat: no-repeat;
 	background-position:center; 
-	height:800px;
+	background-size: 100%;
+	height: 700px;
 }
 
 
@@ -86,10 +90,27 @@ footer {
     margin: auto;
 }
 
-#search_partner{
-	margin: auto;
+
+.navbar{
+    background:transparent;
+    background-color: gray;
 }
 
-#search_coach{
-	margin: auto;
+#test{
+
+	background-image: url(../images/register.png);
+	background-size: 100%;
+}
+
+
+.centered{
+	position: relative;
+	border: solid black 10px;
+	width: 400px;
+	height: 500px;
+ 	margin: auto;
+	text-align: middle;
+	background-color: gray;
+	vertical-align: text-top;
+	margin-top: 200px;
 }

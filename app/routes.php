@@ -1,19 +1,68 @@
 <?php
 
+/*
+ * Static pages routes
+*/
+Route::get('/', array(
+	'as' => 'home',
+	'uses' => 'PagesController@home'
+));
+
+/*
+ * Unauthenticated
+*/
+Route::group(array('before' => 'guest'), function(){
+
+	Route::get('login', array(
+		'as' => 'login',
+		'uses' => 'AuthenticationController@getLogin'
+	));
+
+	Route::get('register', array(
+		'as' => 'register',
+		'uses' => 'AuthenticationController@getRegister'
+	));
+
+	Route::group(array('before' => 'csrf'), function(){
+
+		Route::post('login', array(
+			'as' => 'login_post',
+			'uses' => 'AuthenticationController@postLogin'
+		));
+
+		Route::post('register', array(
+			'as' => 'register_post',
+			'uses' => 'AuthenticationController@postRegister'
+		));
+	});
+
+});
+
+/*
+ * Authenticated
+*/
+Route::group(array('before' => 'auth'), function(){
+
+	Route::resource('posts', 'PostsController'/*, array('only' => 'create', 'show', 'index')*/);
+
+	Route::get('logout', array(
+		'as' => 'logout',
+		'uses' => 'AuthenticationController@logout'
+	));
+
+});
+
+/*
+ * IOC bindings
+*/
 App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
 
-Route::get('/', function()
-{
-	return View::make('index');
-});
 
 Route::get('test', function(){
 
-	return 'hi';
-});
+	return View::make('test');
 
-Route::resource('posts', 'PostsController');
-Route::resource('authentication', 'AuthenticationsController');
+});
 
 
 

@@ -16,10 +16,11 @@ class CreatePostsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('title');
-			$table->string('location');
-			$table->string('description');
-			$table->integer('level');
-			$table->string('owner');
+			$table->string('author');
+			$table->string('course');
+			$table->integer('course_code');
+			$table->string('edition');
+			$table->string('image');
 			$table->timestamps();
 		});
 	}
