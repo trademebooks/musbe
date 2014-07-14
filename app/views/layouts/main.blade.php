@@ -11,11 +11,7 @@
     <div class="container"> <!-- container start -->
 
       <div class="row"> <!-- row start -->
-
-          <div class="col-lg-12"> <!-- row1 colum1 start -->
             @yield('content')
-          </div> <!-- row1 colum1 end -->
-
       </div> <!-- row end -->
 
     </div> <!-- container end -->

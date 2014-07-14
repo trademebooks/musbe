@@ -15,4 +15,9 @@ class Profile extends \Eloquent {
 		'twitter_username' 
 	];
 
+	public function user() {
+
+		return $this->belongsTo('User');
+	}
+
 }

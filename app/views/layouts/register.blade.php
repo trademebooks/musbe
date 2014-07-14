@@ -4,7 +4,7 @@
     @include('partials/header')
   </head>
 
-  <body id="test">
+  <body class="background-register">
 
     @include('partials/nav')
 

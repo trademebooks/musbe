@@ -8,6 +8,10 @@ Route::get('/', array(
 	'uses' => 'PagesController@home'
 ));
 
+Route::get('about', array(
+	'as' => 'about',
+	'uses' => 'PagesController@about'
+));
 /*
  * Unauthenticated
 */
@@ -57,12 +61,6 @@ Route::group(array('before' => 'auth'), function(){
 */
 App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
 
-
-Route::get('test', function(){
-
-	return View::make('test');
-
-});
 
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
 /*

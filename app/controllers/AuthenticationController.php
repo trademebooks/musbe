@@ -35,13 +35,19 @@ class AuthenticationController extends \BaseController {
 		    'password' => $password
 		);
 
-		$this->registrationForm->validate($credentials);
+		//$this->loginForm->validate($credentials);
 
-		if(Sentry::authenticate($credentials)){
-			return Redirect::intended('/');
-		}
+       	$user = Sentry::authenticate($credentials, false);
+        if ($user)
+        {
+        	return Redirect::route('posts.index');
+        }
+			
+		//return Redirect::intended('/test');
 
-		return Redirect::back()->withInput()-withFlashMessage('invalid credentials');
+		//dd($credentials);
+		//return 'logn doesnt work';
+		//return Redirect::back()->withInput()-withFlashMessage('invalid credentials');
 	}
 
 	/**

@@ -1,8 +1,79 @@
 /* this is my custom CSS */
 
-body{
-	padding-top: 50px;
+footer {
+	color: white;
 }
+
+body {
+	background:rgba(200, 200, 200, 1);
+}
+
+* {
+	font-family: sans-serif;
+}
+
+/*
+ * Miscellaneous 
+ */
+.clear{
+	clear: both;
+}
+
+.jumbotron{
+	background-image: url(../images/home.png);
+	background-repeat: no-repeat;
+	background-position:center; 
+	background-size: 100%;
+	height: 700px;
+}
+
+.navbar{
+	padding: 0px 20px 0px 0px;
+	background:rgba(215,215,215,0.5);
+}
+
+.background-register{
+	background-image: url(../images/register.png);
+	background-size: 100%;
+}
+
+.background-login{
+	background-image: url(../images/login.png);
+	background-size: 100%;
+}
+
+.background-404{
+	background-image: url(../images/404.png);
+	background-size: 100%;
+}
+
+.centered{
+	position: relative;
+	border: solid black 10px;
+	width: 400px;
+	height: 500px;
+ 	margin: auto;
+	text-align: middle;
+	background-color: gray;
+	vertical-align: text-top;
+	margin-top: 200px;
+}
+
+.bg-colour-maroon{
+	background-color: maroon;
+}
+
+.padding{
+	padding: 0px 50px 50px 50px;
+}
+
+.border{
+	border: solid black 10px;
+}
+
+
+
+
 .post{
 	height: 300px;
 	width: 250px;
@@ -48,69 +119,4 @@ body{
 
 .post_float_right_description{
 	height: 80%;
-}
-
-/*
- * Miscellaneous 
- */
-.clear{
-	clear: both;
-}
-
-img{
-
-}
-
-.jumbotron{
-	background-image: url(../images/home.png);
-	background-repeat: no-repeat;
-	background-position:center; 
-	background-size: 100%;
-	height: 700px;
-}
-
-
-footer {
-	padding: 2em 0;
-	margin: 3em 0;
-	border-top: 1px solid black;
-	color: black;
-	text-align: center;
-}
-
-
-* {
- font-family: sans-serif;
-}
-
-
-#logo{
-    width: 60%;
-    height: 60%;
-    margin: auto;
-}
-
-
-.navbar{
-    background:transparent;
-    background-color: gray;
-}
-
-#test{
-
-	background-image: url(../images/register.png);
-	background-size: 100%;
-}
-
-
-.centered{
-	position: relative;
-	border: solid black 10px;
-	width: 400px;
-	height: 500px;
- 	margin: auto;
-	text-align: middle;
-	background-color: gray;
-	vertical-align: text-top;
-	margin-top: 200px;
 }

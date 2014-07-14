@@ -19,8 +19,17 @@ class PagesController extends BaseController {
 	 */
 	public function about()
 	{
-		//return View::make('about');
+		return View::make('pages.about');
 	}
 
-
+	/**
+	 * Manages all the static and most commonly used pages.
+	 *
+	 * @return view
+	 */
+	public function contact()
+	{
+		//return View::make('about');
+	}
+	
 }

@@ -1,4 +1,3 @@
-
 {{ Form::model($user->profile, ['method' =>'patch', 'route' => ['profile.update', $user->username]]) }}
 
 	<h1> Edit Profile </h1>

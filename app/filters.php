@@ -35,17 +35,7 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (! Sentry::check())
-	{
-		if (Request::ajax())
-		{
-			return Response::make('Unauthorized', 401);
-		}
-		else
-		{
-			return Redirect::guest('login');
-		}
-	}
+	if (!Sentry::check()) return Redirect::guest('login');
 });
 
 
