@@ -1,1 +1,0 @@
-C:\wamp\www\github\ping_pong_partners\app/views/posts/show.blade.php
