@@ -19,7 +19,7 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		$posts = $this->post->getAll();
-		return View::make('posts.index', compact('posts'));  // ['posts' => $posts]//
+		return View::make('posts.index', compact('posts'));
 	}
 
 	/**

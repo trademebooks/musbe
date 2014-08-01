@@ -17,7 +17,7 @@ class AuthenticationController extends \BaseController {
 	 */
 	public function getLogin()
 	{
-		return View::make('authentication.login');
+		return View::make('auth.login');
 	}
 
 	/**
@@ -57,7 +57,7 @@ class AuthenticationController extends \BaseController {
 	 */
 	public function getRegister()
 	{
-		return View::make('authentication.register');
+		return View::make('auth.register');
 	}
 
 	/**

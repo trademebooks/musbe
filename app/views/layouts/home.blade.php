@@ -7,7 +7,42 @@
   <body>
 
     @include('partials/nav')
-    @include('partials/jumbotron')
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron jumbotron-home">
+
+      <br><br>
+      <br><br>
+
+      <div class="container">
+
+        <div id="heading">
+          <h3> Welcome to </h3>
+          <h1> McMaster Used Book Exchange </h1>
+          <p> A place to buy & sell all your textbooks and course material </p>
+        </div>
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+        <div id="search">
+          <form class="navbar-form navbar-right" role="form">
+            <b> Find sellers now! <b>
+            <div class="form-group">
+              <input type="text" size="80" placeholder="Enter a textbook, course material, course code, course name . . .
+  " class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Search</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+<!--
 
 <center class="border">
   <div>
@@ -20,7 +55,7 @@
  filter bar here
   </div>
 </center>
-
+-->
 
 <br><br>
     <div class="container"> <!-- container start -->
@@ -33,7 +68,6 @@
 
     @include('partials/footer')
     @include('partials/scripts')
-
   </body>
 
 </html>

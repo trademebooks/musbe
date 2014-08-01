@@ -12,9 +12,9 @@
 
       <div class="row"> <!-- row start -->
 
-          <div class="col-lg-12 text-center"> <!-- row1 colum1 start -->
-            @yield('content')
-          </div> <!-- row1 colum1 end -->
+      <div class="col-lg-12 text-center"> <!-- row1 colum1 start -->
+        @yield('content')
+      </div> <!-- row1 colum1 end -->
 
       </div> <!-- row end -->
 
