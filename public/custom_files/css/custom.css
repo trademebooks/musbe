@@ -1,126 +1,191 @@
-/* this is my custom CSS */
+/* 
+ * MUSBE CSS
+ * By: Yichen Zhu
+ */
+
+
+/* ----- Globals start ----- */
+
+input[type=text], [type=password]
+{
+    color: black;
+    height: 30px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+    border: 1px solid black;
+}
 
 footer {
 	color: white;
 }
 
 body {
-	background:rgba(200, 200, 200, 1);
+	background: white;
+	color: black;
 }
 
 * {
-	font-family: sans-serif;
+	font-family: georgia;
 }
 
-/*
- * Miscellaneous 
- */
+hr {
+    height: 1px;
+    background: black;
+}
+
+img {
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #A7A7A7;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #A7A7A7;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #A7A7A7;  
+}
+
+:-ms-input-placeholder {  
+   color: #A7A7A7;  
+}
+
+/* Globals end */
+
+
+/* ----- Helpers start ----- */
+
 .clear{
 	clear: both;
 }
 
-.jumbotron{
-	background-image: url(../images/home.png);
-	background-repeat: no-repeat;
-	background-position:center; 
-	background-size: 100%;
+/* Helpers end */
+
+
+/* ----- Paddings start ----- */
+
+.padding10{
+	padding: 10px;
 }
 
-.navbar{
-	padding: 0px 20px 0px 0px;
-	background:rgba(215,215,215,0.5);
+.padding20{
+	padding: 10px;
 }
 
-.background-register{
-	background-image: url(../images/register.png);
-	background-size: 100%;
+.padding-footer{
+	padding: 10px 50px 100px 5px;
 }
 
-.background-login{
-	background-image: url(../images/login.png);
-	background-size: 100%;
+/* Paddings end*/
+
+
+/* ----- Background Colors start ----- */
+
+.background-color-gray{
+	background-color: gray;
 }
 
-.background-404{
-	background-image: url(../images/404.png);
-	background-size: 100%;
+.background-color-white{
+	background-color: white;
+}
+
+.background-color-maroon{
+	background-color: maroon;
+}
+
+/* Background Colors start */
+
+
+/* ----- Font Weights start ----- */
+
+.font-weight-bold
+{
+	font-weight:bold;
+}
+
+/* Font Weights end */
+
+
+/* ----- Font Colors start ----- */
+
+.font-color-white{
+	color: white;
+}
+
+.font-color-maroon{
+	color: maroon;
+}
+
+
+/* Font Colors end */
+
+
+/* ----- Font Sizes start ----- */
+
+.font-size-em-10{
+	font-size: 1.0em; 
+}
+
+.font-size-em-12{
+	font-size: 1.2em; 
+}
+
+.font-size-em-14{
+	font-size: 1.2em; 
+}
+
+.font-size-em-16{
+	font-size: 1.6em; 
+}
+
+.font-size-em-20{
+	font-size: 2.0em; 
+}
+
+.font-size-em-30{
+	font-size: 3.0em; 
+}
+
+/* Font Sizes end */
+
+
+/* ----- Alignments start -----*/
+
+.text-center{
+	text-align: center;
 }
 
 .centered{
 	position: relative;
-	border: solid black 10px;
 	width: 400px;
-	height: 500px;
+	min-height: 400px;
  	margin: auto;
 	text-align: middle;
-	background-color: gray;
-	vertical-align: text-top;
 	margin-top: 200px;
+
 }
 
-.bg-colour-maroon{
-	background-color: maroon;
-}
+/* Alignments end */
 
-.padding{
-	padding: 0px 50px 50px 50px;
-}
+
+/* ----- Borders start ----- */
 
 .border{
 	border: solid black 10px;
 }
 
-.post{
-	height: 300px;
-	width: 250px;
-    border-style: solid;
-    border-width: 2px;
+.border-bottom{
+	border-bottom: solid black 0.3em;
 }
 
-/*
- * right post
- */
-.post_float_left{
-	float: left;
-	width: 30%;
-}
-
-.post_float_left_image img{
-	width: 100%;
-}
-
-.post_float_left_type{
-	float:left;
-}
-
-.post_float_right_level{
-	float:right;
-}
-
-/*
- * left post
- */
-.post_float_right{
-	float: right;
-	width: 70%;
-}
-
-.post_float_right_name{
-	height: 20%;
-	background-color: black;
-	padding: 2px;
-	text-align: center;
-	color: white;
-}
-
-.post_float_right_description{
-	height: 80%;
-}
+/* Borders end */
 
 
-
-
-/*new stuff*/
+/* ---- Backgrounds and Jumbotrons start ----- */
 
 .jumbotron-home{
 	background: #f6f6f6 url(../images/home.png) no-repeat center center;
@@ -128,54 +193,103 @@ body {
 	margin-bottom: -20px;
 }
 
+.background-login{
+	background-image: url(../images/login.png);
+	background-size: 100%;
+}
+
+.background-register{
+	background-image: url(../images/register.png);
+	background-size: 100%;
+}
+
 .jumbotron-bookshelf{
-	background: #f6f6f6 url(images/bookshelf.png) no-repeat center;
+	background: #f6f6f6 url(../images/bookshelf.png) no-repeat center;
 	background-size: cover;
 	margin-bottom: -20px;
 }
 
 .jumbotron-post{
-	background: #f6f6f6 url(images/post.png) no-repeat;
+	background: #f6f6f6 url(../images/post.png) no-repeat;
 	background-position: center;
 	background-size: cover;
 	margin-bottom: -20px;
 }
 
+.background-404{
+	background-image: url(../images/404.png);
+	background-size: 100%;
+}
+
+/* Backgrounds and Jumbotrons end */
+
+
+/* ----- Navigation start -----*/
+
 .navbar{
-	padding: 15px;
-	background:rgba(215,215,215,0.5);
+	padding: 20px;
+	background:rgba(153, 153, 153,0.5);
 }
 
-.title1{
-	background-color: gray;
-	height: 50px;
+.navbar-custom .navbar-nav > li > a {
+	font-size: 1.2em; 
+    color:black;
 }
 
-.title2{
-	background-color: white;
-	height: 50px;
+/* Navigation end */
+
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+
+/* ----- Misc start -----*/
+
+.post{
+	width: 250px;
+    border-style: solid;
+    border-width: 2px;
 }
 
-.text-center{
-	text-align: center;
+.custom-font-alpha{
+	font-size: 0.8em;
+	color: #A7A7A7;
 }
 
-.padding10{
-	padding: 10px;
+.custom-background-alpha{
+	background-color: rgba(184, 189, 196, 0.8);
+	background: rgba(184, 189, 196, 0.8);
 }
 
-.instruction{
-	background-color: gray;
-	height: 50px;
+.custom-button-alpha{
+	width: 70%;
+	height: 30px;
+	border: solid black 1px;
+	color: white;
 }
+
+/* Misc end */
+
+
+/* ----- Ids start -----*/
 
 #step{
 	background-color: maroon;
 	width: 100px;
-	height: 50px;
 	float: left;
 }
 
 #instructions{
-	padding: 10px 10px 10px 120px;
+	float: left;
+}
+
+#logo{
+	height: 40px;
+	width: 150px;
+}
+/* Ids end */
+
+.log-reg-input-width{
+	width: 70%;
 }

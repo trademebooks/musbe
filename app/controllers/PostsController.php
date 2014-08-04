@@ -45,9 +45,33 @@ class PostsController extends \BaseController {
 		{
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
-
+		/*
 		Post::create($data);
 
+		$post = new Post();
+
+		$post->something = Input::get('something');
+
+		if (Input::hasFile('thumbnail')) {
+
+			$file = Input::file('thumbnail');
+			
+			return [
+				'path' => $file->getRealPath(),
+				'size' => $file->getSize(),
+				'mime' => $file->getMimeType(),
+				'name' => $file->getClientOriginalName(),
+				'extension'=> $file->getClientOriginalExtension() 
+			];
+			
+			$file->move(public_path() . '/uploaded_images/', time() . '-' . $file->getClientOriginalName());
+			$post->thumbnail = $file->getRealPath();
+
+		}
+
+		$post->save();
+		*/
+		
 		return Redirect::route('posts.index');
 	}
 
