@@ -71,6 +71,8 @@ class PostsController extends \BaseController {
 
 		$post->save();
 		*/
+
+		Post::create($data);
 		
 		return Redirect::route('posts.index');
 	}

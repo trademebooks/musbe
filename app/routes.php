@@ -12,6 +12,12 @@ Route::get('about', array(
 	'as' => 'about',
 	'uses' => 'PagesController@about'
 ));
+
+Route::get('contact', array(
+	'as' => 'contact',
+	'uses' => 'PagesController@contact'
+));
+
 /*
  * Unauthenticated
 */
@@ -63,6 +69,10 @@ App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPost
 
 
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
+
+
+
+
 /*
  * Wildcards all last so you do not overwrite anything up top
  */

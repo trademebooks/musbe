@@ -4,5 +4,5 @@ namespace Acme\Repositories;
 
 interface PostRepositoryInterface {
 
-	public function getALL();
+	public function getAll();
 }
