@@ -75,7 +75,8 @@ Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'cr
 Route::get('test', function(){
 
 	//dd(App::environment());
-	dd(getenv('ENV'));
+	var_dump((getenv('ENV')));
+	var_dump(Config::get('database.default'));
 });
 /*
  * Wildcards all last so you do not overwrite anything up top
