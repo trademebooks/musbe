@@ -2,7 +2,7 @@
 
 return array(
 
-	'default' => 'mysqllocal',
+	'default' => 'mysql',
 
 	'connections' => array(
 
