@@ -77,7 +77,10 @@ Route::get('test', function(){
 	//dd(App::environment());
 	var_dump((getenv('ENV')));
 	var_dump(Config::get('database.default'));
-	var_dump(getenv('DB_HOST'));
+	var_dump($_ENV['DB_HOST']);
+	var_dump($_ENV['DB_NAME']);
+	var_dump($_ENV['DB_USERNAME']);
+	var_dump($_ENV['DB_PASSWORD']);
 });
 /*
  * Wildcards all last so you do not overwrite anything up top
