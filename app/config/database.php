@@ -61,10 +61,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '107.170.116.126', //getenv('DB_HOST'),
-			'database'  => 'musbe', //getenv('DB_NAME'),
-			'username'  => 'forge', //getenv('DB_USERNAME'),
-			'password'  => 'Y3TAgFalTuAdWQydSUWX', //getenv('DB_PASSWORD'),
+			'host'      => getenv('DB_HOST'),
+			'database'  => getenv('DB_NAME'),
+			'username'  => getenv('DB_USERNAME'),
+			'password'  => getenv('DB_PASSWORD'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

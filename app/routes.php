@@ -81,6 +81,8 @@ Route::get('test', function(){
 	var_dump(getenv('DB_NAME'));
 	var_dump(getenv('DB_USERNAME'));
 	var_dump(getenv('DB_PASSWORD'));
+
+	var_dump(App::environment());
 });
 /*
  * Wildcards all last so you do not overwrite anything up top
