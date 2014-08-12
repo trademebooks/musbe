@@ -1,5 +1,12 @@
 <?php
 
+$_ENV = [
+	'DB_HOST' => 'dummy',
+	'DB_NAME' => 'dummy',
+	'DB_USERNAME' => 'dummy',
+	'DB_PASSWORD' => 'dummy'
+];
+
 return array(
 
 	/*
