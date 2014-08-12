@@ -20,12 +20,7 @@ else {
 	];
 }
 */
-$ENV =[
-	'DB_HOST' => getenv('DB_HOST'),
-	'DB_NAME' => getenv('DB_NAME'),
-	'DB_USERNAME' => getenv('DB_USERNAME'),
-	'DB_PASSWORD' => getenv('DB_PASSWORD')
-];
+
 return array(
 
 	'default' => 'mysql',
@@ -34,10 +29,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => $ENV['DB_HOST'],
-			'database'  => $ENV['DB_NAME'],
-			'username'  => $ENV['DB_USERNAME'],
-			'password'  => $ENV['DB_PASSWORD'],
+			'host'      => getenv('DB_HOST'),
+			'database'  => getenv('DB_NAME'),
+			'username'  => getenv('DB_USERNAME'),
+			'password'  => getenv('DB_PASSWORD'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
