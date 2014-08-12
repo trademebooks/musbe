@@ -72,7 +72,11 @@ Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'cr
 
 
 
+Route::get('test', function(){
 
+	//dd(App::environment());
+	dd(Config::get('database.default'));
+});
 /*
  * Wildcards all last so you do not overwrite anything up top
  */
