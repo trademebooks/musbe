@@ -1,6 +1,26 @@
 <?php
 
+use Acme\Repositories\PostRepositoryInterface;
+
+
 class PagesController extends BaseController {
+
+	/**
+	 * Manages all the static and most commonly used pages.
+	 *
+	 * @var view
+	 */
+	protected $post;
+
+	/**
+	 * Manages all the static and most commonly used pages.
+	 *
+	 * @return view
+	 */
+	function __construct(PostRepositoryInterface $post)
+	{
+		$this->post = $post;
+	}
 
 	/**
 	 * Manages all the static and most commonly used pages.
@@ -9,7 +29,8 @@ class PagesController extends BaseController {
 	 */
 	public function home()
 	{
-		return View::make('pages.home');
+		$posts = $this->post->getById(1);
+		return View::make('pages.home')->with('posts', $posts);
 	}
 
 	/**

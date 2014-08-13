@@ -12,11 +12,13 @@ class DatabaseSeeder extends Seeder {
 
 		User::truncate();
 		Post::truncate();
+		Profile::truncate();
 
 		Eloquent::unguard();
 
-		//$this->call('UserTableSeeder');
+		$this->call('UserTableSeeder');
 		$this->call('PostsTableSeeder');
+		$this->call('ProfilesTableSeeder');
 	}
 
 }

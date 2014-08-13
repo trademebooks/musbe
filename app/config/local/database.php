@@ -1,9 +1,10 @@
 <?php
-$env = 'production';
+
+$env = 'd'; // p=production, d=development
 
 $ENV = [];
 
-if($env == 'production') 
+if($env == 'p') 
 {
 	$ENV =[
 		'DB_HOST' => '107.170.116.126',

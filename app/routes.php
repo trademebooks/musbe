@@ -3,10 +3,10 @@
 /*
  * Static pages routes
 */
-Route::get('/', array(
+Route::get('/', [
 	'as' => 'home',
 	'uses' => 'PagesController@home'
-));
+]);
 
 Route::get('about', array(
 	'as' => 'about',
@@ -67,23 +67,13 @@ Route::group(array('before' => 'auth'), function(){
 */
 App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
 
-
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
 
-
-
 Route::get('test', function(){
-
-	//dd(App::environment());
-	var_dump((getenv('ENV')));
-	var_dump(Config::get('database.connections'));
-	var_dump(getenv('DB_HOST'));
-	var_dump(getenv('DB_NAME'));
-	var_dump(getenv('DB_USERNAME'));
-	var_dump(getenv('DB_PASSWORD'));
-
-	var_dump(App::environment());
+	var_dump(Config::get('database.connections.mysql'));
 });
+
+
 /*
  * Wildcards all last so you do not overwrite anything up top
  */

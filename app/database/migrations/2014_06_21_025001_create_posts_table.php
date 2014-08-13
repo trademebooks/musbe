@@ -15,15 +15,15 @@ class CreatePostsTable extends Migration {
 		Schema::create('posts', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('user_id');
+			$table->integer('user_id');
 			$table->string('book_name');
 			$table->string('auth_name');
-			$table->integer('course_code');
-			$table->string('edition');
+			$table->string('course_code');
+			$table->integer('edition');
 			$table->boolean('solutions');
 			$table->string('image');
-			$table->string('comments');
-			$table->string('price');
+			$table->text('comments');
+			$table->decimal('price', 4, 2);
 			$table->timestamps();
 		});
 	}

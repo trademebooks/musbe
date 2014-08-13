@@ -193,6 +193,11 @@ img {
 	margin-bottom: -20px;
 }
 
+.background-404{
+	background-image: url(../images/404.png) no-repeat;
+	background-size: 100%;
+}
+
 .background-login{
 	background-image: url(../images/login.png);
 	background-size: 100%;

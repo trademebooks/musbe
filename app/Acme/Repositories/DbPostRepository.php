@@ -1,11 +1,18 @@
-<?php
+<?php namespace Acme\Repositories;
 
-namespace Acme\Repositories;
+use Post;
+
 
 class DbPostRepository implements PostRepositoryInterface{
 
 	public function getAll()
 	{
-		//return 'get all from the mysqldb';
+		return Post::all();
 	}
+
+	public function getById($id)
+	{
+		return Post::find($id);
+	}
+
 }

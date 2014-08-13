@@ -1,19 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    @include('partials/header')
-  </head>
+@extends('layouts.404')
 
-  <body>
-    
-    <div class="container"> <!-- container start -->
+@section('content')
 
-      @yield('content')
-      404 page
-    </div> <!-- container end -->
+<div class="centered custom-background-alpha padding20">
 
-    @include('partials/scripts')
-    
-  </body>
+	<br><br>
 
-</html>
+	<h1> 404 </h1>
+
+	<h3> Oops, Something went wrong. </h3>
+
+	<br><br>
+
+	<p> 
+		The page you are looking for is not available or it has been moved. We suggest you go back to the Homepage to start over again.
+	</p>
+
+	<p>
+		We apologize for the inconvenience.
+	</p>
+
+	<h1> : ( </h1>
+
+</div>
+
+@stop
