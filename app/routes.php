@@ -1,118 +1,82 @@
 <?php
 
-/*
- * Static pages routes
-*/
+/**
+ * Static page routes
+ */
 Route::get('/', [
 	'as' => 'home',
 	'uses' => 'PagesController@home'
 ]);
 
-Route::get('about', array(
+Route::get('/about', [
 	'as' => 'about',
 	'uses' => 'PagesController@about'
-));
+]);
 
-Route::get('contact', array(
+Route::get('/contact', [
 	'as' => 'contact',
 	'uses' => 'PagesController@contact'
-));
+]);
 
-/*
- * Unauthenticated
-*/
-Route::group(array('before' => 'guest'), function(){
+Route::get('/add-post', [
+    'as' => 'add_post',
+    'uses' => 'PagesController@addPost'
+]);
 
-	Route::get('login', array(
+/**
+ * UnAuthenticated actions
+ */
+Route::group(['before' => 'guest'], function()
+{
+	Route::get('/login', array(
 		'as' => 'login',
 		'uses' => 'AuthenticationController@getLogin'
 	));
 
-	Route::get('register', array(
+	Route::get('/register', array(
 		'as' => 'register',
 		'uses' => 'AuthenticationController@getRegister'
 	));
 
-	Route::group(array('before' => 'csrf'), function(){
-
-		Route::post('login', array(
+	Route::group(['before' => 'csrf'], function()
+    {
+		Route::post('/login', [
 			'as' => 'login_post',
 			'uses' => 'AuthenticationController@postLogin'
-		));
+		]);
 
-		Route::post('register', array(
+		Route::post('/register', [
 			'as' => 'register_post',
 			'uses' => 'AuthenticationController@postRegister'
-		));
+		]);
 	});
-
 });
 
-/*
- * Authenticated
-*/
-Route::group(array('before' => 'auth'), function(){
+/**
+ * Authenticated actions
+ */
+Route::group(['before' => 'auth'], function()
+{
+	Route::resource('/books', 'BooksController');
 
-	Route::resource('posts', 'PostsController'/*, array('only' => 'create', 'show', 'index')*/);
-
-	Route::get('logout', array(
+	Route::get('/logout', [
 		'as' => 'logout',
 		'uses' => 'AuthenticationController@logout'
-	));
-
+	]);
 });
 
-/*
- * IOC bindings
-*/
-App::bind('Acme\Repositories\PostRepositoryInterface', 'Acme\Repositories\DbPostRepository');
+/**
+ * IOC Bindings
+ */
+App::bind('Acme\Repositories\BookRepositoryInterface', 'Acme\Repositories\DbBookRepository');
 
+/**
+ * Miscellaneous routes
+ */
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
 
-Route::get('test', function(){
+Route::get('test', function()
+{
 	var_dump(Config::get('database.connections.mysql'));
 });
 
-
-/*
- * Wildcards all last so you do not overwrite anything up top
- */
-
-
-/*
-
-class Foo{
-	
-	proteted $bar
-
-	protected $baz
-
-	oocontruct(Bar $bar, Baz $baz){
-	
-		this bar = bar
-		this baz = baz
-	}
-}
-
-class Bar{}
-
-class Baz{}
-
-class Mock{}
-
--IOC gives you a place to manage instantition process
-so you do not have to do it over and over through the constrctuor
-
-App::bind('foo', function(){
-	return foo obeject //create a new instance of foo 
-}); //can delete this and sitll works
-
-
-App::make('foo'); -> call foo binded by the IOC
-
-App::instance('foo', Mock()) ---> used for testing, using the Mock class instead
-
-
-
-Controllers and automatic resolutions*******
-*/

@@ -12,7 +12,7 @@
 
   <div class="row">
 
-    <h4 class="font-color-maroon"> Text Book Item(s) </h4>
+    <h4 class="font-color-maroon"> Text Book Item </h4>
 
     <div class="col-md-3">
       Textbook Name* 

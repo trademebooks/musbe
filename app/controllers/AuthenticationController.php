@@ -40,7 +40,7 @@ class AuthenticationController extends \BaseController {
        	$user = Sentry::authenticate($credentials, false);
         if ($user)
         {
-        	return Redirect::route('posts.index');
+        	return Redirect::route('books.index');
         }
 			
 		//return Redirect::intended('/test');

@@ -15,10 +15,14 @@
 
     <div class="navbar-collapse navbar-custom collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ URL::route('login') }}"> Login </a></li>
-        <li><a href="{{ URL::route('register') }}"> Register </a></li>
-        <li><a href="{{ URL::route('posts.edit') }}"> My Bookshelf </a></li>
-        <li><a href="{{ URL::route('posts.create') }}" class="btn btn-default btn-lg" role="button"> Post an Ad </a></li>
+          @if(Sentry::check())
+            <li><a href="{{ URL::route('logout') }}"> Logout </a></li>
+            <li><a href="{{ URL::route('books.index') }}"> My Bookshelf </a></li>
+            <li><a href="{{ URL::route('add_post') }}" class="btn btn-default btn-lg" role="button"> Post an Ad </a></li>
+          @else
+            <li><a href="{{ URL::route('login') }}"> Login </a></li>
+            <li><a href="{{ URL::route('register') }}"> Register </a></li>
+          @endif
       </ul>
     </div>
 

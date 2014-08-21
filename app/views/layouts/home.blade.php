@@ -45,6 +45,7 @@
     <div class="font-weight-bold font-size-em-20 background-color-gray text-center padding10">
       Check out What People are Selling.
     </div>
+
     <br><br>
 
     <div class="container"> <!-- container start -->

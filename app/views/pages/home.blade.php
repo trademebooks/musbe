@@ -1,56 +1,46 @@
 @extends('layouts.home')
 
 @section('content')
-<form action="{{ URL::route('posts.index') }}" method="get">
-	<input type="search" name="search" placeholder="search...">
-	<input type="submit" value="search">
-</form>
-<?php $count = 0 ?>
-	@for ($j = 1; $j <= 3; $j++)
-		<?php $count += 1 ?>
-		<div class="row">
-			@for ($i = 1; $i <= 4; $i++)
-				<?php $count += 1 ?>
-				<!-- activities column 1 -->
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="post">
-						<div class="border-bottom"> 
-							<img src="https://s3.amazonaws.com/titlepages.leanpub.com/laravel-testing-decoded/large?1387953392">
-						</div>
+    <!--
+    <form action="{{ URL::route('books.index') }}" method="get">
+        <input type="search" name="search" placeholder="search...">
+        <input type="submit" value="search">
+    </form>
+    -->
+    <?php $count = 0 ?>
+    <div class="container"> <!-- length of the entire Array of Book-->
+        @foreach ($books as $book)
+            <?php $count += 1 ?>
+            <!-- activities column 1 -->
+            <div class="col-lg-3">
+                <div class="post">
+                    <div class="border-bottom">
+                        <img src="http://d.gr-assets.com/books/1370511112l/18042866.jpg" >
+                    </div>
 
-						<div class="padding10">
-							<li> Book title, edition </li>
-							<div> For: {{ $posts->user_id }} </div>
-							<div> By: </div>
-							<div> Solutions: </div>
-							<hr>
+                    <div class="padding10">
 
-							<li> Course Material </li>
-							post
-							<hr>
+                        <li> {{ $book->title }} </li>
+                        <div> For: </div>
+                        <div> By: </div>
+                        <div> Solutions: </div>
+                        <hr>
 
-							<li> Miscellaneous </li>
-							post
-							<hr>
+                        <div> Addtional Comments </div>
+                        <div> Meet up at Mac Uni only! Or else you die! </div>
 
-							<div> Addtional Comments </div>
-							<div> Meet up at Mac Uni only! Or else you die! </div>
+                        <div>
+                            <span> posted today </span>
+                            <span> call </span>
+                            <span> price </span>
+                        </div>
 
-							<div>
-								<span> posted today </span> 
-								<span> call </span>
-								<span> price </span>
-							</div>
-						</div>
-					</div>
-				</div>
+                    </div>
+                </div>
+                {{ '<br>' }}
+            </div>
+        @endforeach
+    </div>
 
-			@endfor
-
-		</div>
-		<br><br>
-
-	@endfor
-
-{{ $count }}
+    <br><br>
 @stop

@@ -1,56 +1,37 @@
 <?php
 
-use Acme\Repositories\PostRepositoryInterface;
+use Acme\Repositories\BookRepositoryInterface;
 
 
 class PagesController extends BaseController {
 
-	/**
-	 * Manages all the static and most commonly used pages.
-	 *
-	 * @var view
-	 */
-	protected $post;
+    protected $book;
 
-	/**
-	 * Manages all the static and most commonly used pages.
-	 *
-	 * @return view
-	 */
-	function __construct(PostRepositoryInterface $post)
-	{
-		$this->post = $post;
-	}
+    function __construct(BookRepositoryInterface $book)
+    {
+        $this->book = $book;
+    }
 
-	/**
-	 * Manages all the static and most commonly used pages.
-	 *
-	 * @return view
-	 */
 	public function home()
 	{
-		$posts = $this->post->getById(1);
-		return View::make('pages.home')->with('posts', $posts);
+        $books = $this->book->getAll();
+
+		return View::make('pages.home')->with('books', $books);
 	}
 
-	/**
-	 * Manages all the static and most commonly used pages.
-	 *
-	 * @return view
-	 */
 	public function about()
 	{
 		return View::make('pages.about');
 	}
 
-	/**
-	 * Manages all the static and most commonly used pages.
-	 *
-	 * @return view
-	 */
 	public function contact()
 	{
 		return View::make('pages.contact');
 	}
-	
+
+    public function addPost()
+    {
+        return View::make('pages.add_post');
+    }
+
 }

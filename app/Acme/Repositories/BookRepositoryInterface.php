@@ -1,7 +1,6 @@
 <?php namespace Acme\Repositories;
 
-
-interface PostRepositoryInterface {
+interface BookRepositoryInterface {
 
 	public function getAll();
 

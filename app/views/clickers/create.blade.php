@@ -1,0 +1,1 @@
+C:\wamp\www\github\musbe\app/views/clickers/create.blade.php
