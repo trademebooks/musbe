@@ -5,8 +5,42 @@
 
 @section('content')
 
+    <div class="table-responsive">
+        <table class="table table-hover">
 
-    <!-- Button trigger modal -->
+            <caption> <h1> My Listings </h1> </caption>
+
+            <thead>
+                <tr>
+                    <th> Image </th>
+                    <th> Book Title </th>
+                    <th> Description </th>
+                    <th> Edit </th>
+                    <th> Delete </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach($books as $book)
+                <tr>
+                    <td class="col-md-2"><img src="{{ $book->image }}"></td>
+                    <td class="col-md-3"> {{ $book->title }} </td>
+                    <td class="col-md-5"> {{ $book->description }} </td>
+                    <td class="col-md-1"> <button type="button" class="btn btn-success"> Edit </button> </td>
+                    <td class="col-md-1"> <button type="button" class="btn btn-danger"> Delete </button> </td>
+                </tr>
+                @endforeach
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+
+
+
+<!-- Button trigger modal -->
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
       Launch demo modal
     </button>

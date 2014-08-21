@@ -5,6 +5,25 @@
 
 
 /* ----- Globals start ----- */
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+.row-custom {
+    -moz-column-width: 18em;
+    -webkit-column-width: 18em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+}
+
+.item {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.well {
+    position:relative;
+    display: block;
+}
 
 input[type=text], [type=password]
 {
@@ -35,10 +54,8 @@ hr {
 }
 
 img {
-
     width: 100%;
     height: auto;
-    /* height: 200px; */
 }
 
 ::-webkit-input-placeholder {
@@ -282,22 +299,45 @@ img {
 
 /* ----- Ids start -----*/
 
-#step{
+#step
+{
 	background-color: maroon;
 	width: 100px;
 	float: left;
 }
 
-#instructions{
+#instructions
+{
 	float: left;
 }
 
-#logo{
+#logo
+{
 	height: 40px;
 	width: 150px;
 }
 /* Ids end */
 
-.log-reg-input-width{
+.log-reg-input-width
+{
 	width: 70%;
+}
+
+.thumbnail
+{
+    margin: -10px;
+}
+
+.thumbnail .price
+{
+    font-size: 25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 10px;
+
+}
+
+th{
+    padding: 0px 0px 0px 50px;
 }

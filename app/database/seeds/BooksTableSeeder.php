@@ -32,7 +32,7 @@ class BooksTableSeeder extends Seeder {
                 'course_name' => $course_name[rand(0, 9)],
 				'edition' => rand(0, 20),
                 'description' => $faker->paragraph(1, 3),
-				'image' => $faker->imageUrl(rand(50, 500), rand(50, 500)),
+				'image' => $faker->imageUrl(rand(200, 500), rand(200, 500)),
 				'price' => rand(0, 200),
                 'email' => $faker->email,
                 'phone_number' => $faker->phoneNumber

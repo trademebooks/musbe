@@ -77,6 +77,8 @@ Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'cr
 
 Route::get('test', function()
 {
-	var_dump(Config::get('database.connections.mysql'));
+	//var_dump(Config::get('database.connections.mysql'));
+
+    return View::make('test');
 });
 

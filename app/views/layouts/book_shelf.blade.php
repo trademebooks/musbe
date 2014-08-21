@@ -22,8 +22,6 @@
         My Bookshelf
     </div>
 
-    <br><br>
-
     <div class="container"> <!-- container start -->
         @yield('content')
     </div> <!-- container end -->

@@ -26,7 +26,7 @@ class BooksController extends \BaseController {
 	 */
 	public function index()
 	{
-		$books = $this->book->getAll();
+		$books = Book::where('user_id' , '=', Sentry::getUser()->id)->get();
 		return View::make('books.index', compact('books'));
 	}
 
