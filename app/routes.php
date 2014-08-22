@@ -82,3 +82,14 @@ Route::get('test', function()
     return View::make('test');
 });
 
+Route::get('/mail', function()
+{
+    $data =[];
+
+    Mail::send('emails.welcome', $data, function($message)
+    {
+        $message->to('yichenzhu1337@gmail.com')
+                ->subject('Welcome to Musbe');
+    });
+
+});

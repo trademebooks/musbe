@@ -25,7 +25,7 @@
                             <p> Course Name: {{ $book->course_name }} </p>
                             <p> Edition: {{ $book->edition }} </p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button"> Contact </a>
+                                <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"> Contact </a>
                             </p>
                         </div>
                     </div>
@@ -34,4 +34,33 @@
         @endforeach
     </div>
 
+    <div class="text-center">
+        {{ $books->links() }}
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <form role="form" action="{{ URL::route('books.store') }}" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"> Contact the Seller </label>
+                            <textarea name="message" class="form-control" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"> Submit </button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"> Back </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 @stop

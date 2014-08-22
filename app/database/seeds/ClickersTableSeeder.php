@@ -9,10 +9,10 @@ class ClickersTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 30) as $index)
+		foreach(range(1, 500) as $index)
 		{
 			Clicker::create([
-                'user_id' => rand(1, 30),
+                'user_id' => rand(1, 100),
                 'title' => $faker->title,
                 'description' => $faker->paragraph(rand(1, 5)),
                 'price' => rand(0, 100)

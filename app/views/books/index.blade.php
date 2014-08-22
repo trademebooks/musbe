@@ -15,6 +15,7 @@
                     <th> Image </th>
                     <th> Book Title </th>
                     <th> Description </th>
+                    <th> Preview </th>
                     <th> Edit </th>
                     <th> Delete </th>
                 </tr>
@@ -22,49 +23,56 @@
 
             <tbody>
                 @foreach($books as $book)
-                <tr>
-                    <td class="col-md-2"><img src="{{ $book->image }}"></td>
-                    <td class="col-md-3"> {{ $book->title }} </td>
-                    <td class="col-md-5"> {{ $book->description }} </td>
-                    <td class="col-md-1"> <button type="button" class="btn btn-success"> Edit </button> </td>
-                    <td class="col-md-1"> <button type="button" class="btn btn-danger"> Delete </button> </td>
-                </tr>
+                    <tr>
+                        <td class="col-md-2"><img src="{{ $book->image }}"></td>
+                        <td class="col-md-3"> {{ $book->title }} </td>
+                        <td class="col-md-4"> {{ $book->description }} </td>
+                        <td class="col-md-1"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="{{'#myModal' . $book->id}}"> Preview </button></td>
+                        <td class="col-md-1"><a href="{{ route('books.edit', $book->id) }}"><button type="button" class="btn btn-success btn-lg"> Edit &nbsp; &nbsp; &nbsp; </button></a></td>
+                        <td class="col-md-1">
+                            {{ Form::open(array('method' => 'DELETE', 'route' => array('books.destroy', $book->id))) }}
+                                {{ Form::submit('Delete', array('class' => 'btn btn-danger btn-lg')) }}
+                            {{ Form::close() }}
+                        </td>
+                    </tr>
                 @endforeach
             </tbody>
 
         </table>
     </div>
 
+    @foreach($books as $book)
+        <!-- Modal -->
+        <div class="modal fade" id="{{ 'myModal' . $book->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
 
+                <div class="modal-content">
 
+                    <div class="modal-body">
+                        <div class="item">
+                            <div class="well">
+                              <div class="thumbnail">
+                                  <img src="{{ $book->image }}">
+                                  <div class="caption">
 
+                                      {{ $book->title }}
+                                      <p>
+                                          <a href="#" class="btn btn-primary" role="button"> Contact </a>
+                                      </p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
 
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"> Back </button>
+                  </div>
 
-<!-- Button trigger modal -->
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
+                </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-          <form action="{{ URL::route('books.store'); }}" method="post">
-                <input type="text" name="title">
-                <input type="submit" value="submit">
-          </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
+    @endforeach
 
 @stop

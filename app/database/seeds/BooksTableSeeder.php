@@ -22,11 +22,11 @@ class BooksTableSeeder extends Seeder {
             'Programming 10'
         ];
 
-		foreach(range(1, 30) as $index)
+		foreach(range(1, 500) as $index)
 		{
 			Book::create([
-				'user_id' => rand(0, 30),
-				'title' => $faker->sentence(rand(1,5)),
+				'user_id' => rand(1, 100),
+				'title' => $faker->sentence(rand(1, 5)),
 				'author' => $faker->name(),
 				'course_code' => $course_code[rand(0, 9)],
                 'course_name' => $course_name[rand(0, 9)],

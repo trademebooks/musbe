@@ -63,7 +63,7 @@ class BooksController extends \BaseController {
     {
         $book = Book::find($id);
 
-        return View::make('books.edit', compact('post'));
+        return View::make('books.edit', compact('book'));
     }
 
 	/**
@@ -100,8 +100,10 @@ class BooksController extends \BaseController {
         try
         {
             $this->sellBookForm->validate($input);
+
             Book::create($input);
 
+            return Redirect::route('books.index');
         }
         catch (FormValidationException $e)
         {
@@ -120,12 +122,7 @@ class BooksController extends \BaseController {
 	{
 		$book = Book::findOrFail($id);
 
-		$validator = Validator::make($data = Input::all(), Book::$rules);
-
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
+		$data = Input::all();
 
 		$book->update($data);
 
@@ -146,32 +143,3 @@ class BooksController extends \BaseController {
 	}
 
 }
-
-
-
-/*
-Book::create($data);
-
-$book = new Post();
-
-$book->something = Input::get('something');
-
-if (Input::hasFile('thumbnail')) {
-
-    $file = Input::file('thumbnail');
-
-    return [
-        'path' => $file->getRealPath(),
-        'size' => $file->getSize(),
-        'mime' => $file->getMimeType(),
-        'name' => $file->getClientOriginalName(),
-        'extension'=> $file->getClientOriginalExtension()
-    ];
-
-    $file->move(public_path() . '/uploaded_images/', time() . '-' . $file->getClientOriginalName());
-    $book->thumbnail = $file->getRealPath();
-
-}
-
-$book->save();
-*/

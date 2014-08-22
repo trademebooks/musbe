@@ -14,7 +14,7 @@ class PagesController extends BaseController {
 
 	public function home()
 	{
-        $books = $this->book->getAll();
+        $books = Book::paginate(16);
 
 		return View::make('pages.home')->with('books', $books);
 	}
