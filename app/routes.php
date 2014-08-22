@@ -75,21 +75,10 @@ App::bind('Acme\Repositories\BookRepositoryInterface', 'Acme\Repositories\DbBook
  */
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
 
+
 Route::get('test', function()
 {
 	//var_dump(Config::get('database.connections.mysql'));
 
-    return View::make('test');
-});
-
-Route::get('/mail', function()
-{
-    $data =[];
-
-    Mail::send('emails.welcome', $data, function($message)
-    {
-        $message->to('yichenzhu1337@gmail.com')
-                ->subject('Welcome to Musbe');
-    });
-
+    return View::make('create');
 });

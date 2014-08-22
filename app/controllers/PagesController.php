@@ -14,7 +14,16 @@ class PagesController extends BaseController {
 
 	public function home()
 	{
-        $books = Book::paginate(16);
+        $query = Request::get('q');
+
+        if($query)
+        {
+            $books = Book::where('title', 'LIKE', "%$query%")->paginate(16);
+        }
+        else
+        {
+            $books = Book::paginate(16);
+        }
 
 		return View::make('pages.home')->with('books', $books);
 	}

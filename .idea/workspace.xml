@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e12c20-8f3f-4b91-9c1e-4745a1f98c17" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\app\views\layouts\404.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\app\views\layouts\add_post.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\app\views\layouts\book_shelf.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\app\views\layouts\home.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\app\views\layouts\login.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\app\views\layouts\post_create.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\app\views\layouts\register.blade.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/errors/404.blade.php" afterPath="$PROJECT_DIR$/app/views/errors/404.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/controllers/PagesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/add_post.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/add_post.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/create.blade.php" afterPath="$PROJECT_DIR$/app/views/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/books/create.blade.php" afterPath="$PROJECT_DIR$/app/views/books/create.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/local/database.php" afterPath="$PROJECT_DIR$/app/config/local/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/books/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/books/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Acme/helpers.php" afterPath="$PROJECT_DIR$/app/Acme/helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/books/index.blade.php" afterPath="$PROJECT_DIR$/app/views/books/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/app/views/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/app/views/auth/register.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.php" afterPath="$PROJECT_DIR$/app/config/services.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="musbe.iws" />
@@ -29,7 +50,43 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="19" selection-start="1584" selection-end="1584" vertical-scroll-proportion="-59.612904" vertical-offset="0" max-vertical-offset="2200">
+            <state line="84" column="0" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-27.516129" vertical-offset="995" max-vertical-offset="1980">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/pages/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="20" selection-start="669" selection-end="669" vertical-scroll-proportion="-4.967742" vertical-offset="506" max-vertical-offset="1452">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="0" selection-start="2690" selection-end="2690" vertical-scroll-proportion="0.5983146" vertical-offset="1356" max-vertical-offset="2860">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/services.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="-12.32258" vertical-offset="102" max-vertical-offset="814">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="10" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-15.612904" vertical-offset="330" max-vertical-offset="1584">
               <folding />
             </state>
           </provider>
@@ -38,62 +95,7 @@
       <file leaf-file-name="PagesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="285" selection-end="285" vertical-scroll-proportion="-11.354838" vertical-offset="0" max-vertical-offset="946">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/books/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="93" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-9.935484" vertical-offset="396" max-vertical-offset="1848">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/books/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="177" selection-end="177" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="3344">
-              <folding>
-                <marker date="1408685782994" expanded="true" signature="334:552" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="579:2924" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="687:1573" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="1609:1996" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="2032:2458" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="2494:2908" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="3015:3260" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="3287:3708" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="3412:3692" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="3799:4008" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="4035:4602" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="4139:4586" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="4693:4914" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="4941:5905" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="5047:5439" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="5475:5889" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="5991:6138" placeholder="..." />
-                <marker date="1408685782994" expanded="true" signature="6026:6123" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BooksController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/BooksController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="0" selection-start="2691" selection-end="2691" vertical-scroll-proportion="-8.859649" vertical-offset="1915" max-vertical-offset="3300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="9" selection-start="16" selection-end="16" vertical-scroll-proportion="0.18032786" vertical-offset="0" max-vertical-offset="1100">
+            <state line="15" column="5" selection-start="250" selection-end="250" vertical-scroll-proportion="-10.645162" vertical-offset="0" max-vertical-offset="1144">
               <folding />
             </state>
           </provider>
@@ -119,7 +121,6 @@
         <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/Acme/Repositories/BookRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Acme/Repositories/DbBookRepository.php" />
-        <option value="$PROJECT_DIR$/app/views/books/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Acme/Forms/SellBookForm.php" />
         <option value="$PROJECT_DIR$/app/models/Book.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/home.blade.php" />
@@ -128,26 +129,35 @@
         <option value="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/app/views/test.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/pages/add_post.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_06_21_025001_create_books_table.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/add_post.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/book_shelf.blade.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/UserTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/config/mail.php" />
         <option value="$PROJECT_DIR$/app/views/emails/welcome.php" />
         <option value="$PROJECT_DIR$/app/views/emails/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/config/view.php" />
         <option value="$PROJECT_DIR$/public/custom_files/css/custom.css" />
-        <option value="$PROJECT_DIR$/app/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/BooksTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/ClickersTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/ProfilesTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/views/books/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/books/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/controllers/BooksController.php" />
         <option value="$PROJECT_DIR$/app/config/local/database.php" />
+        <option value="$PROJECT_DIR$/app/Acme/helpers.php" />
+        <option value="$PROJECT_DIR$/app/start/global.php" />
+        <option value="$PROJECT_DIR$/app/views/errors/404.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/books/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/books/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/books/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/add_post.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/pages/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/config/services.php" />
       </list>
     </option>
   </component>
@@ -328,28 +338,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -394,157 +382,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="emails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="books" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seeds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,90 +423,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repositories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="musbe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Acme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -733,10 +491,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6896907" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2072165" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -773,34 +531,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Acme/Forms/SellBookForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BooksController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="3674">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BooksController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1550">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/AuthenticationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="6" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="2875" />
@@ -848,11 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Acme/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="944" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Acme/Forms/ProfileForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="913" />
@@ -892,16 +617,6 @@
         <state line="13" column="41" selection-start="341" selection-end="341" vertical-scroll-proportion="46.83871" vertical-offset="1716" max-vertical-offset="2530" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="121" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="814" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/post_create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.20533334" vertical-offset="0" max-vertical-offset="1012" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/musbe-rawhtml/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4596" column="10" selection-start="92086" selection-end="92095" vertical-scroll-proportion="-0.73450136" vertical-offset="101657" max-vertical-offset="136598">
@@ -914,31 +629,9 @@
         <state line="0" column="0" selection-start="0" selection-end="1712" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1364" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.2580647" vertical-offset="132" max-vertical-offset="924" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/add_post.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_21_025001_create_books_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="87" selection-start="620" selection-end="620" vertical-scroll-proportion="-14.83871" vertical-offset="46" max-vertical-offset="1078" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="204" selection-end="246" vertical-scroll-proportion="0.352" vertical-offset="0" max-vertical-offset="750" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.648" vertical-offset="20" max-vertical-offset="1496">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
@@ -951,13 +644,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/emails/auth/reminder.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="330" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="33" selection-start="3161" selection-end="3161" vertical-scroll-proportion="-3.548387" vertical-offset="1980" max-vertical-offset="2860">
           <folding />
         </state>
       </provider>
@@ -1011,98 +697,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/book_shelf.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="241" selection-end="241" vertical-scroll-proportion="0.36666667" vertical-offset="55" max-vertical-offset="836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/add_post.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="288" selection-end="290" vertical-scroll-proportion="0.45303866" vertical-offset="112" max-vertical-offset="836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="29" selection-start="1436" selection-end="1436" vertical-scroll-proportion="-26.258064" vertical-offset="0" max-vertical-offset="1584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/books/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="29" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3344">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3894">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/books/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="93" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-9.935484" vertical-offset="396" max-vertical-offset="1848">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/books/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="177" selection-end="177" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="3344">
-          <folding>
-            <marker date="1408685782994" expanded="true" signature="334:552" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="579:2924" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="687:1573" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="1609:1996" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="2032:2458" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="2494:2908" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="3015:3260" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="3287:3708" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="3412:3692" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="3799:4008" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="4035:4602" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="4139:4586" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="4693:4914" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="4941:5905" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="5047:5439" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="5475:5889" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="5991:6138" placeholder="..." />
-            <marker date="1408685782994" expanded="true" signature="6026:6123" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="19" selection-start="1584" selection-end="1584" vertical-scroll-proportion="-59.612904" vertical-offset="0" max-vertical-offset="2200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="285" selection-end="285" vertical-scroll-proportion="-11.354838" vertical-offset="0" max-vertical-offset="946">
+        <state line="2" column="9" selection-start="16" selection-end="16" vertical-scroll-proportion="0.05751634" vertical-offset="0" max-vertical-offset="1100">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BooksController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="0" selection-start="2691" selection-end="2691" vertical-scroll-proportion="-8.859649" vertical-offset="1915" max-vertical-offset="3300">
+        <state line="111" column="0" selection-start="2691" selection-end="2691" vertical-scroll-proportion="0.68335587" vertical-offset="1915" max-vertical-offset="3300">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
+    <entry file="file://$PROJECT_DIR$/app/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="16" selection-end="16" vertical-scroll-proportion="0.18032786" vertical-offset="0" max-vertical-offset="1100">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/errors/404.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/errors/404.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="23" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.6039216" vertical-offset="660" max-vertical-offset="1936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/books/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3344">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/books/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="35" selection-start="18" selection-end="35" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3344">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/books/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1848">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/add_post.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="752">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3894">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Acme/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="450" selection-end="450" vertical-scroll-proportion="0.54640526" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="121" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.50265956" vertical-offset="62" max-vertical-offset="814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/jumbotron.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-27.516129" vertical-offset="995" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="250" selection-end="250" vertical-scroll-proportion="-10.645162" vertical-offset="0" max-vertical-offset="1144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/pages/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="20" selection-start="669" selection-end="669" vertical-scroll-proportion="-4.967742" vertical-offset="506" max-vertical-offset="1452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="43" selection-start="615" selection-end="615" vertical-scroll-proportion="-12.32258" vertical-offset="102" max-vertical-offset="814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="10" selection-start="1423" selection-end="1423" vertical-scroll-proportion="-15.612904" vertical-offset="330" max-vertical-offset="1584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2690" selection-end="2690" vertical-scroll-proportion="0.5983146" vertical-offset="1356" max-vertical-offset="2860">
           <folding />
         </state>
       </provider>

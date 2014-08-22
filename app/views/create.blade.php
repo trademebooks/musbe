@@ -1,4 +1,4 @@
-@extends('layouts.post_create')
+@extends('layouts.books.create_book')
 
 {{ HTML::style('bower_components/bootstrap/dist/css/bootstrap.min.css') }}
 {{ HTML::style('custom_files/css/custom.css') }}

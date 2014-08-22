@@ -1,6 +1,6 @@
 <?php
 
-$env = 'p'; // p=production, d=development
+$env = 'd'; // p=production, d=development
 
 $ENV = [];
 

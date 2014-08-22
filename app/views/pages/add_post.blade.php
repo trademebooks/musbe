@@ -1,4 +1,4 @@
-@extends('layouts.add_post')
+@extends('layouts.pages.add_post')
 
 {{ HTML::style('bower_components/bootstrap/dist/css/bootstrap.min.css') }}
 {{ HTML::style('custom_files/css/custom.css') }}
