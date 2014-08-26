@@ -11,6 +11,7 @@ class UserTableSeeder extends Seeder {
 
 		User::create([
 			'email' => 'yichen@yichen.com',
+            'username' => 'yichen',
 			'password' => Hash::make('yichen'),
 			'activated' => 1
 		]);
@@ -19,7 +20,8 @@ class UserTableSeeder extends Seeder {
 		{
 			User::create([
 				'email' => $faker->email,
-				'password' => $faker->word,
+                'username' => $faker->username,
+				'password' => Hash::make($faker->word),
 				'activated' => rand(0 , 1)
 			]);
 		}

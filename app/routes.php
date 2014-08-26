@@ -18,9 +18,19 @@ Route::get('/contact', [
 	'uses' => 'PagesController@contact'
 ]);
 
+Route::get('/', [
+    'as' => 'home',
+    'uses' => 'PagesController@home'
+]);
+
 Route::get('/add-post', [
     'as' => 'add_post',
     'uses' => 'PagesController@addPost'
+]);
+
+Route::get('/registration-complete', [
+    'as' => 'registration.complete',
+    'uses' => 'PagesController@registrationComplete'
 ]);
 
 /**
@@ -75,10 +85,32 @@ App::bind('Acme\Repositories\BookRepositoryInterface', 'Acme\Repositories\DbBook
  */
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
 
+/**
+ * Mailers
+ */
+Route::post('/contact-user', [
+    'as' => 'contact-user',
+    'uses' => 'MailersController@contactUser'
+]);
 
-Route::get('test', function()
+
+Route::get('test1', function()
 {
-	//var_dump(Config::get('database.connections.mysql'));
+    Mail::send([], [], function($message)
+    {
+        $message->setBody('this is the user`s message');
 
-    return View::make('create');
+        $message->from('user@user.com', 'user');
+
+        $message->to('yichenzhu1337@gmail.com');
+
+        $message->subject($subject);
+    });
 });
+
+Route::get('test2', function()
+{
+    echo asset('custom_files/images/logo.png');
+});
+
+

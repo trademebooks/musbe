@@ -5,7 +5,7 @@
 <div class="centered custom-background-alpha">
 
 	<br><br>
-
+    @include('flash::message')
 	<h2> Login </h2>
 
 	<br>

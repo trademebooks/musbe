@@ -181,7 +181,7 @@ img {
 
 .centered{
 	position: relative;
-	width: 400px;
+	width: 320px;
 	min-height: 400px;
  	margin: auto;
 	text-align: middle;
@@ -226,6 +226,11 @@ img {
 .background-register{
 	background-image: url(../images/register.png);
 	background-size: 100%;
+}
+
+.background-registration-complete{
+    background-image: url(../images/registration_complete.png);
+    background-size: 100%;
 }
 
 .jumbotron-bookshelf{

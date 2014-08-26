@@ -124,6 +124,7 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Laracasts\Validation\ValidationServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider'
 		
 	),
 
@@ -192,6 +193,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Sentry' 		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+        'Flash'           => 'Laracasts\Flash\Flash'
 
 	),
 

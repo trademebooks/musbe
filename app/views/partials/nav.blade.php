@@ -10,7 +10,7 @@
         <span class="icon-bar background-color-gray"></span>
         <span class="icon-bar background-color-gray"></span>
       </button>
-      <a class="navbar-brand" href="{{ URL::route('home') }}"><img id="logo" src="custom_files/images/logo.png" alt="Musbe Logo" height="40" width="150"></a>
+      <a class="navbar-brand" href="{{ URL::route('home') }}"><img id="logo" src="{{ asset('custom_files/images/logo.png') }}" alt="Musbe Logo" height="40" width="150"></a>
     </div>
 
     <div class="navbar-collapse navbar-custom collapse">

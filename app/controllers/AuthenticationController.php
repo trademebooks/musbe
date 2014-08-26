@@ -2,18 +2,32 @@
 
 use Acme\Forms\RegistrationForm;
 use Acme\Forms\LoginForm;
+use Acme\Mailers\UserMailer;
+use GuzzleHttp\Client;
 
 class AuthenticationController extends \BaseController {
 
-	public function __construct(RegistrationForm $registrationForm, LoginForm $loginForm)
+    /**
+     * @var $registrationForm, $loginForm, $userMailer
+     */
+    protected $registrationForm;
+    protected $loginForm;
+    protected $userMailer;
+
+    /**
+     * @param $registrationForm, $loginForm
+     */
+	public function __construct(RegistrationForm $registrationForm, LoginForm $loginForm, UserMailer $userMailer)
 	{
 		$this->registrationForm = $registrationForm;
 		$this->loginForm = $loginForm;
+		$this->userMailer = $userMailer;
 	}
+
 	/**
-	 * Show the form for loging a user in
+	 * Show the form for logging a user in
 	 *
-	 * @return Response
+	 * @return View
 	 */
 	public function getLogin()
 	{
@@ -35,25 +49,42 @@ class AuthenticationController extends \BaseController {
 		    'password' => $password
 		);
 
-		//$this->loginForm->validate($credentials);
+		$this->loginForm->validate($credentials);
 
-       	$user = Sentry::authenticate($credentials, false);
-        if ($user)
+        try
         {
-        	return Redirect::route('books.index');
-        }
-			
-		//return Redirect::intended('/test');
+            $user = Sentry::authenticate($credentials, false);
+            if ($user)
+            {
+                return Redirect::route('books.index');
+            }
 
-		//dd($credentials);
-		//return 'logn doesnt work';
-		//return Redirect::back()->withInput()-withFlashMessage('invalid credentials');
+        }
+        catch (Cartalyst\Sentry\Users\WrongPasswordException $e)
+        {
+            Flash::error('The Email and/or Password is Incorrect, Please Try Again!');
+            return Redirect::back();
+        }
+        catch (Cartalyst\Sentry\Users\UserNotFoundException $e)
+        {
+            Flash::error('The Email and/or Password is Incorrect, Please Try Again!');
+            return Redirect::back();
+        }
+        /*
+         * future implementation
+            catch (Cartalyst\Sentry\Users\UserNotActivatedException $e)
+            {
+                echo 'User is not activated.';
+            }
+        */
+
 	}
 
 	/**
 	 * Show the form for registering a new user
+	 * and sends a mail to the user telling them they are welcomed to the family
 	 *
-	 * @return Response
+	 * @return View
 	 */
 	public function getRegister()
 	{
@@ -67,13 +98,12 @@ class AuthenticationController extends \BaseController {
 	 */
 	public function postRegister()
 	{
-
 		$username = Input::get('username');
 		$email = Input::get('email');
 		$password = Input::get('password');
 		$password_again = Input::get('password_again');
 
-		$validate= array(
+		$credentials = array(
 			'username' => $username,
 		    'email'    => $email,
 		    'password' => $password,
@@ -81,24 +111,30 @@ class AuthenticationController extends \BaseController {
 		    'activated' => true
 		);
 
-		$credentials = array(
-			'username' => $username,
-		    'email'    => $email,
-		    'password' => $password,
-		    'activated' => true
-		);
+		$this->registrationForm->validate($credentials);
 
-		$this->registrationForm->validate($validate);
+        $credentials = array(
+            'username' => $username,
+            'email'    => $email,
+            'password' => $password,
+            'activated' => true
+        );
 
-		Sentry::register($credentials);
+        $user = Sentry::register($credentials);
 
-		return Redirect::home();
+        if ($user)
+        {
+        	$this->userMailer->welcome($user->email);
+            return Redirect::route('registration.complete');
+        }
+
 	}
 
 	/**
-	 * Logs the user out of their session
+	 * Logs the user out of their session and redirects them to
+     * home page
 	 *
-	 * @return void
+	 * @return View
 	 */
 	public function logout()
 	{

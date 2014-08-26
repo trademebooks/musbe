@@ -18,11 +18,11 @@ class PagesController extends BaseController {
 
         if($query)
         {
-            $books = Book::where('title', 'LIKE', "%$query%")->paginate(16);
+            $books = Book::where('title', 'LIKE', "%$query%")->orderBy('created_at', 'DESC')->paginate(17);
         }
         else
         {
-            $books = Book::paginate(16);
+            $books = Book::orderBy('created_at', 'DESC')->paginate(17);
         }
 
 		return View::make('pages.home')->with('books', $books);
@@ -43,4 +43,8 @@ class PagesController extends BaseController {
         return View::make('pages.add_post');
     }
 
+    public function registrationComplete()
+    {
+        return View::make('pages.registration_complete');
+    }
 }
