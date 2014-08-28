@@ -18,8 +18,8 @@
 
     </div>
 
-    <div class="font-weight-bold font-size-em-20 background-color-gray text-center padding10">
-        Buy or Sell?
+    <div class="font-size-em-20 background-color-gray text-center padding10">
+        Create a listing
     </div>
 
     <div class="container"> <!-- container start -->

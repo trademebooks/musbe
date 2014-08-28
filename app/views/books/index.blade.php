@@ -8,25 +8,27 @@
     <div class="table-responsive">
         <table class="table table-hover">
 
-            <caption> <h1> My Listings </h1> </caption>
+            <caption> <h3> My Textbooks </h3> </caption>
 
             <thead>
                 <tr>
-                    <th> Image </th>
+                    <!-- <th> Image </th> -->
                     <th> Book Title </th>
-                    <th> Description </th>
-                    <th> Preview </th>
-                    <th> Edit </th>
-                    <th> Delete </th>
+                    <!--<th> Description </th>-->
+                    <th> Price </th>
+                    <th> </th>
+                    <th>  </th>
+                    <th>  </th>
                 </tr>
             </thead>
 
             <tbody>
                 @foreach($books as $book)
                     <tr>
-                        <td class="col-md-2"><img src="{{ $book->image }}"></td>
-                        <td class="col-md-3"> {{ $book->title }} </td>
-                        <td class="col-md-4"> {{ $book->description }} </td>
+                        <!-- <td class="col-md-4"><img src="{{ $book->image }}"></td> -->
+                        <td class="col-md-4"> {{ $book->title }} </td>
+                        <!-- <td class="col-md-4"> {{ $book->description }} </td> -->
+                        <td class="col-md-1"><sup>$</sup>{{ $book->price }}</td>
                         <td class="col-md-1"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="{{'#myModal' . $book->id}}"> Preview </button></td>
                         <td class="col-md-1"><a href="{{ route('books.edit', $book->id) }}"><button type="button" class="btn btn-success btn-lg"> Edit &nbsp; &nbsp; &nbsp; </button></a></td>
                         <td class="col-md-1">

@@ -4,8 +4,10 @@
 
 <div class="centered custom-background-alpha">
 
-	<br><br>
+	<br>
+
     @include('flash::message')
+    
 	<h2> Login </h2>
 
 	<br>
@@ -26,11 +28,6 @@
 
 		{{ Form::token() }}
 	</form>
-
-	<hr>
-
-	<a href="#"> Connect with Facebook </a>
-	<br><br>
 
 </div>
 

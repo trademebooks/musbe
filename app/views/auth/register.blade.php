@@ -4,7 +4,7 @@
 
 <div class="centered custom-background-alpha">
 
-	<br><br>
+	<br>
 
 	<h2> Create an Account </h2>
 
@@ -36,11 +36,6 @@
 
 		{{ Form::token() }}
 	</form>
-
-	<hr>
-
-	<a href="#"> Connect with Facebook </a>
-	<br><br>
 
 </div>
 

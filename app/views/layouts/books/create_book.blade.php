@@ -18,11 +18,11 @@
 
     </div>
 
-    <div class="font-weight-bold font-size-em-20 background-color-gray text-center padding10">
-      Sell items on <span class="font-color-maroon"> MUSBE </span>
+    <div class="font-size-em-20 background-color-gray text-center padding10">
+      Sell items on <span class="font-color-maroon font-weight-bold"> MUSBE </span>
     </div>
 
-    <div class="font-size-em-20 font-color-maroon background-color-white text-center padding10">
+    <div class="font-size-em-16 font-color-maroon background-color-white text-center padding10">
       Follow these simple 4 steps to complete your listing!
     </div>
 

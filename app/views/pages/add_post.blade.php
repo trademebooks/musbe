@@ -7,18 +7,24 @@
 
     <h1> I want to Sell: </h1>
 
+    <br>
+    
     <div class="row">
 
-        <div class="col-md-4">
-            <a href="{{ URL::route('books.create') }}"> Books <img src="http://howtoblogabook.com/wp-content/uploads/2012/10/shopping-cart-with-books-dreamstime_xs_23300617.jpg" height="200" width="200"> </a>
+        <div class="col-md-3">
+            <a href="{{ URL::route('books.create') }}"><img src="{{ asset('custom_files/images/textbook_icon.png') }}" height="200" width="200"></a>
         </div>
-        <div class="col-md-4">
-            <a href=""> IClickers <img src="http://it.unh.edu/media/at/atsc/productBig.png" height="200" width="200"> </a>
-        </div>
-        <div class="col-md-4">
-            <a href=""> Course Materials <img src="http://www.mumsgone2aus.com/wp-content/uploads/2012/01/school-test.jpg" height="200" width="200"> </a>
+        <div class="col-md-3">
+            <a href=""><img src="{{ asset('custom_files/images/notes_icon.png') }}" height="200" width="200"></a>
         </div>
 
+        <div class="col-md-3">
+            <a href=""><img src="{{ asset('custom_files/images/iclicker_icon.png') }}" height="200" width="200"></a>
+        </div>
+
+        <div class="col-md-3">
+            <a href=""><img src="{{ asset('custom_files/images/bundles_icon.png') }}" height="200" width="200"></a>
+        </div>
     </div>
 
 @stop

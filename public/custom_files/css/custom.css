@@ -31,12 +31,39 @@ input[type=text], [type=password]
     height: 30px;
     padding: 5px;
     text-decoration: none;
-    border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
+    border-radius: 5px;
     border: 1px solid black;
+}
+
+textarea
+{
+	color: black;
+    padding: 5px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px; 
+    border: 1px solid black;
+}
+
+.input-search-size
+{
+	height: 50px;
+	width: 50px;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
 }
 
 footer {
 	color: white;
+	text-decoration: none;
 }
 
 body {
@@ -93,11 +120,7 @@ img {
 }
 
 .padding20{
-	padding: 10px;
-}
-
-.padding-footer{
-	padding: 10px 50px 100px 5px;
+	padding: 20px;
 }
 
 /* Paddings end*/
@@ -106,7 +129,7 @@ img {
 /* ----- Background Colors start ----- */
 
 .background-color-gray{
-	background-color: gray;
+	background-color: #e8eced;
 }
 
 .background-color-white{
@@ -155,7 +178,7 @@ img {
 }
 
 .font-size-em-14{
-	font-size: 1.2em; 
+	font-size: 1.4em; 
 }
 
 .font-size-em-16{
@@ -258,7 +281,7 @@ img {
 
 .navbar{
 	padding: 20px;
-	background:rgba(153, 153, 153,0.5);
+	background:rgba(153, 153, 153, 0.75);
 }
 
 .navbar-custom .navbar-nav > li > a {
@@ -345,4 +368,42 @@ img {
 
 th{
     padding: 0px 0px 0px 50px;
+}
+
+.btn-contact-size
+{
+	width: 220px;
+
+}
+
+.phone-button-size
+{
+	width: 30px;
+	height: 30px;
+}
+
+/* Pagination */
+.pagination > li > a
+{
+	color: black;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: white;
+  background-color: maroon;
+  border-color: maroon;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: maroon;
+  border-color: maroon;
 }

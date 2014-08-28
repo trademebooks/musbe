@@ -50,7 +50,8 @@ class BooksController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('books.create');
+        $course_codes = CourseCode::all();
+		return View::make('books.create')->with('course_codes', $course_codes);
 	}
 
     /**
@@ -78,8 +79,11 @@ class BooksController extends \BaseController {
         $course_name = Input::get('course_name');
         $course_code = Input::get('course_code');
         $description = Input::get('description');
+
+        $image = (Input::get('image') == null) ? asset('custom_files/images/textbook_icon_textless.png') : Input::get('image');
         $edition = (Input::get('edition') == null) ? "None" : Input::get('edition');
         $price = (Input::get('price') == null) ? "Please Contact" : Input::get('price');
+
         $email = Input::get('email');
         $phone_number = Input::get('phone_number');
 
@@ -91,7 +95,7 @@ class BooksController extends \BaseController {
             'course_name' => $course_name,
             'edition' => $edition,
             'description' => $description,
-            'image' => 'image/url.png',
+            'image' => $image,
             'price' => $price,
             'email' => $email,
             'phone_number' => $phone_number

@@ -104,7 +104,7 @@ Route::get('test1', function()
 
         $message->to('yichenzhu1337@gmail.com');
 
-        $message->subject($subject);
+        $message->subject('subject');
     });
 });
 

@@ -18,8 +18,8 @@
 
     </div>
 
-    <div class="font-weight-bold font-size-em-20 background-color-gray text-center padding10">
-        My Bookshelf
+    <div class="font-size-em-20 background-color-gray text-center padding10">
+        Bookshelf
     </div>
 
     <div class="container"> <!-- container start -->
