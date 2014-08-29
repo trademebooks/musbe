@@ -7,7 +7,7 @@
 		'DB_PASSWORD' => 'root'
 	];
 
-    return array[
+    return [
 
         'default' => 'mysql',
 
@@ -21,7 +21,7 @@
                 'password'  => $ENV['DB_PASSWORD'],
                 'charset'   => 'utf8',
                 'collation' => 'utf8_unicode_ci',
-                'prefix'    => ''
+                'prefix'    => '',
             ]
 
         ],
