@@ -23,7 +23,7 @@
 
                             <p>
                                 <span class="font-color-maroon font-size-em-12"> Course Code: </span> 
-                                <span class="font-size-em-10">{{ $book->course_code }} </span>
+                                <span class="font-size-em-10">{{ $book->course_code_prefix . ' ' . $book->course_code_suffix  }} </span>
                             </p>
 
                             <p>
@@ -37,7 +37,7 @@
                             </p>
 
                             <p>
-                                <a href="#" class="btn btn-contact-size background-color-maroon font-color-white" role="button" data-toggle="modal" data-target="#myModal">
+                                <a href="#" class="btn btn-contact-size background-color-maroon font-color-white" role="button" data-toggle="modal" data-target="{{'#myModal' . $book->id}}">
                                     Contact 
                                 </a>
                             </p>
@@ -59,21 +59,22 @@
 
     @foreach($books as $book)
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="{{ 'myModal' . $book->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
 
                 <div class="modal-content">
+                    @if( Sentry::check() )
+                        <div class="modal-header">
+                            <h1 class="text-center"> Contact Seller </h1>
+                        </div>
 
-                <div class="modal-header">
-                    <h1 class="text-center"> Contact Seller </h1>
-                </div>
-                    <div class="modal-body">
-                        @if( Sentry::check() )
+                        <div class="modal-body">
+
                             <form role="form" action="{{ route('contact-user') }}" method="post">
 
                                 <div class="form-group">
-                                    <label for="exampleInputFile"> Subject: </label>
-                                    <input class="form-control" type="text" name="subject">
+                                    <label for="subject"> Subject: </label>
+                                    <input class="form-control" name="subject" type="text" >
                                 </div>
 
                                 <div class="form-group">
@@ -87,7 +88,7 @@
 
                                 <div class="form-group">
                                     <img class="phone-button-size" src="{{ asset('custom_files/images/phone_icon.png') }}" alt="phone icon">
-                                    <span> {{ $book->phone_number . $book->user->email . $book->user->username }} </span>
+                                    <span> {{ $book->phone_number }} </span>
                                 </div>
 
                                 <div class="modal-footer">
@@ -95,14 +96,18 @@
                                     <button type="submit" class="btn btn-danger pull-right background-color-maroon"> Submit </button>
                                 </div>
 
+                                {{ Form::token() }}
+
                             </form>
-                        @else
-                            <div> login mother fucker </div>
-                        @endif
-                    </div>
 
+                        </div>
+                    @else
+                        <div class="modal-body text-center"> Please login to use this feature. If you are not already logged in, please register for an account! </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left background-color-gray" data-dismiss="modal"> Back </button>
+                        </div>
+                    @endif
                 </div>
-
 
             </div>
         </div>

@@ -18,11 +18,12 @@ class CreateBooksTable extends Migration {
 			$table->integer('user_id');
 			$table->string('title');
 			$table->string('author');
-			$table->string('course_code');
+			$table->string('course_code_prefix');
+            $table->string('course_code_suffix');
             $table->string('course_name');
 			$table->string('edition');
             $table->text('description');
-			$table->string('image')->default('http://pngimg.com/upload/book_PNG2116.png');
+			$table->string('image');
 			$table->string('price');
             $table->string('email');
             $table->string('phone_number');

@@ -16,6 +16,7 @@ class MailersController extends \BaseController {
     {
         $data = [
             'body' => Input::get('body'),
+            'subject' => Input::get('subject'),
             'auth_email' => Input::get('auth_email'),
             'auth_username' => Input::get('auth_username'),
             'receiver_email' => Input::get('receiver_email'),

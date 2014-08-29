@@ -18,11 +18,6 @@ Route::get('/contact', [
 	'uses' => 'PagesController@contact'
 ]);
 
-Route::get('/', [
-    'as' => 'home',
-    'uses' => 'PagesController@home'
-]);
-
 Route::get('/add-post', [
     'as' => 'add_post',
     'uses' => 'PagesController@addPost'
@@ -59,6 +54,14 @@ Route::group(['before' => 'guest'], function()
 			'as' => 'register_post',
 			'uses' => 'AuthenticationController@postRegister'
 		]);
+
+        /**
+         * Mailers
+         */
+        Route::post('/contact-user', [
+            'as' => 'contact-user',
+            'uses' => 'MailersController@contactUser'
+        ]);
 	});
 });
 
@@ -69,10 +72,10 @@ Route::group(['before' => 'auth'], function()
 {
 	Route::resource('/books', 'BooksController');
 
-	Route::get('/logout', [
-		'as' => 'logout',
-		'uses' => 'AuthenticationController@logout'
-	]);
+    Route::get('/logout', [
+        'as' => 'logout',
+        'uses' => 'AuthenticationController@logout'
+    ]);
 });
 
 /**
@@ -85,15 +88,14 @@ App::bind('Acme\Repositories\BookRepositoryInterface', 'Acme\Repositories\DbBook
  */
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'create', 'update']]);
 
+Route: Route::controller('password', 'RemindersController');
+
+
+
+
 /**
- * Mailers
+ * Test routes
  */
-Route::post('/contact-user', [
-    'as' => 'contact-user',
-    'uses' => 'MailersController@contactUser'
-]);
-
-
 Route::get('test1', function()
 {
     Mail::send([], [], function($message)
@@ -110,7 +112,6 @@ Route::get('test1', function()
 
 Route::get('test2', function()
 {
-    echo asset('custom_files/images/logo.png');
+    dd(CourseCode::all()->toArray()[0]['course_code']);
 });
-
 

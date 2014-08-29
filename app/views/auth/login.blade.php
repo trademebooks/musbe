@@ -2,38 +2,38 @@
 
 @section('content')
 
-<div class="centered custom-background-alpha">
+    <div class="centered custom-background-alpha">
 
-	<br>
+        <br>
 
-    @include('flash::message')
-    
-	<h2> Login </h2>
+        @include('flash::message')
 
-	<br>
+        <h2> Login </h2>
 
-	<form action="" method="post">
+        <br>
 
-		<input class="log-reg-input-width" type="text" name="email" placeholder="Email" size="35">
-		<br>
-		{{ $errors->first('email', '<span class="error">:message</span>') }}
-		<br>
+        <form action="" method="post">
 
-		<input class="log-reg-input-width" type="password" name="password" placeholder="Password" size="35">
-		<br>
-		{{ $errors->first('password', '<span class="error">:message</span>') }}
-		<br>
+            <input class="log-reg-input-width" type="text" name="email" placeholder="Email" size="35">
+            <br>
+            {{ $errors->first('email', '<span class="error">:message</span>') }}
+            <br>
 
-		<input class="custom-button-alpha background-color-maroon" type="submit" value="Login">
+            <input class="log-reg-input-width" type="password" name="password" placeholder="Password" size="35">
+            <br>
+            {{ $errors->first('password', '<span class="error">:message</span>') }}
+            <br>
 
-        <br><br>
+            <input class="custom-button-alpha background-color-maroon" type="submit" value="Login">
 
-        <div>
-            <a href="{{ url('/password/remind') }}"> Forgot Password </a>
-        </div>
-		{{ Form::token() }}
-	</form>
+            <br><br>
 
-</div>
+            <div>
+                <a href="{{ url('/password/remind') }}"> Forgot Password </a>
+            </div>
+            {{ Form::token() }}
+        </form>
+
+    </div>
 
 @stop

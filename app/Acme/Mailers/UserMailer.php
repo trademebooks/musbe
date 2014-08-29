@@ -17,10 +17,11 @@ class UserMailer extends Mailer {
 
     public function contactUser($data)
     {
-        Mail::send([], $data, function($message) use ($data)
+        Mail::queue([], $data, function($message) use ($data)
         {
             $message->from($data['auth_email'], $data['auth_username']);
             $message->to($data['receiver_email'], $data['receiver_username']);
+            $message->subject($data['subject']);
             $message->setBody($data['body']);
         });
     }

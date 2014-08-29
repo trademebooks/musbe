@@ -53,16 +53,47 @@
                     <div class="modal-body">
                         <div class="item">
                             <div class="well">
-                              <div class="thumbnail">
-                                  <img src="{{ $book->image }}">
-                                  <div class="caption">
+                                <div class="thumbnail">
+                                    <img src="{{ $book->image }}" alt="...">
+                                    <div class="label label-success price background-color-maroon"><sup>$</sup>{{ $book->price }}</div>
+                                    <div class="caption">
+                                        <h2 class="text-center"> {{ $book->title }} </h2>
 
-                                      {{ $book->title }}
-                                      <p>
-                                          <a href="#" class="btn btn-primary" role="button"> Contact </a>
-                                      </p>
-                                  </div>
-                              </div>
+                                        <span class="font-color-maroon font-size-em-12"> Description: </span>
+                                        <p><span class="font-size-em-10"> {{ $book->description }} </span></p>
+
+                                        <p>
+                                            <span class="font-color-maroon font-size-em-12"> Author: </span>
+                                            <span class="font-size-em-10">{{ $book->author }}</span>
+                                        </p>
+
+                                        <p>
+                                            <span class="font-color-maroon font-size-em-12"> Course Code: </span>
+                                            <span class="font-size-em-10">{{ $book->course_code_prefix . ' ' . $book->course_code_suffix }} </span>
+                                        </p>
+
+                                        <p>
+                                            <span class="font-color-maroon font-size-em-12"> Course Name: </span>
+                                            <span class="font-size-em-10">{{ $book->course_name }} </span>
+                                        </p>
+
+                                        <p>
+                                            <span class="font-color-maroon font-size-em-12"> Edition: </span>
+                                            <span class="font-size-em-10">{{ $book->edition }} </span>
+                                        </p>
+
+                                        <p>
+                                            <a href="#" class="btn btn-contact-size background-color-maroon font-color-white" role="button" data-toggle="modal" data-target="{{'#myModal' . $book->id}}">
+                                                Contact
+                                            </a>
+                                        </p>
+
+                                        <p>
+                                            <span class="font-size-em-10"> {{ date("F j, Y", strtotime($book->created_at)) }} </span>
+                                        </p>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

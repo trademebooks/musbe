@@ -17,6 +17,7 @@ class BooksController extends \BaseController {
 	{
 		$this->book = $book;
         $this->sellBookForm = $sellBookForm;
+        $this->beforeFilter('csrf', ['on' => 'post', 'put', 'patch']);
 	}
 
 	/**
@@ -63,8 +64,8 @@ class BooksController extends \BaseController {
     public function edit($id)
     {
         $book = Book::find($id);
-
-        return View::make('books.edit', compact('book'));
+        $course_codes = CourseCode::all();
+        return View::make('books.edit', compact('book'))->with('course_codes', $course_codes);
     }
 
 	/**
@@ -77,7 +78,9 @@ class BooksController extends \BaseController {
         $title = Input::get('title');
         $author = Input::get('author');
         $course_name = Input::get('course_name');
-        $course_code = Input::get('course_code');
+
+        $course_code_prefix = Input::get('course_code_prefix');
+        $course_code_suffix = Input::get('course_code_suffix');
         $description = Input::get('description');
 
         $image = (Input::get('image') == null) ? asset('custom_files/images/textbook_icon_textless.png') : Input::get('image');
@@ -91,7 +94,8 @@ class BooksController extends \BaseController {
             'user_id' => Sentry::getUser()->id,
             'title' => $title,
             'author' => $author,
-            'course_code' => $course_code,
+            'course_code_prefix' => $course_code_prefix,
+            'course_code_suffix' => $course_code_suffix,
             'course_name' => $course_name,
             'edition' => $edition,
             'description' => $description,
@@ -101,6 +105,7 @@ class BooksController extends \BaseController {
             'phone_number' => $phone_number
         ];
 
+        //dd($input);
         try
         {
             $this->sellBookForm->validate($input);

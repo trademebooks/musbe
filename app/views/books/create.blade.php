@@ -20,7 +20,7 @@
             <div class="col-md-3">
                 Book Name*
                 <br>
-                <input name="title" type="text" placeholder="(ex. Advanced Calculus 2 for Dummies)" size="30" {{ Input::old('title') ? 'value="' . e(Input::old('title')) . '"' : '' }}>
+                <input name="title" type="text" placeholder="(ex. Advanced Calculus 2 for Dummies)" size="40" {{ Input::old('title') ? 'value="' . e(Input::old('title')) . '"' : '' }}>
                 {{ $errors->first('title', '<span class="font-color-maroon error"> :message </span>') }}
                 <br><br>
                 Book Edition
@@ -35,7 +35,7 @@
             <div class="col-md-3">
                 Author*
                 <br>
-                <input name="author" type="text" placeholder="(ex. John Smith)" size="30" {{ Input::old('author') ? 'value="' . e(Input::old('author')) . '"' : '' }}>
+                <input name="author" type="text" placeholder="(ex. John Smith)" size="40" {{ Input::old('author') ? 'value="' . e(Input::old('author')) . '"' : '' }}>
                 <br>
                 {{ $errors->first('author', '<span class="font-color-maroon error"> :message </span>') }}
             </div>
@@ -43,7 +43,7 @@
             <div class="col-md-3">
                 Course Name*
                 <br>
-                <input name="course_name" type="text" placeholder="(ex. Advanced Calculus 2)" size="30" {{ Input::old('course_name') ? 'value="' . e(Input::old('course_name')) . '"' : '' }}>
+                <input name="course_name" type="text" placeholder="(ex. Advanced Calculus 2)" size="40" {{ Input::old('course_name') ? 'value="' . e(Input::old('course_name')) . '"' : '' }}>
                 <br>
                 {{ $errors->first('course_name', '<span class="font-color-maroon error"> :message </span>') }}
             </div>
@@ -51,17 +51,19 @@
             <div class="col-md-3">
                 Course Code*
                 <br>
-                <select name="course_code">
+                <select name="course_code_prefix">
+                    <option>  </option>
                     @foreach($course_codes as $course_code)
-                        <option value="{{ $course_code->course_code }}"> {{ $course_code->course_code }} </option>
+                        <option {{ Input::old('course_code_suffix') ? 'value="' . e(Input::old('course_code_suffix')) . '"' : 'value="' . $course_code->course_code . '"'}}> {{ $course_code->course_code }} </option>
                     @endforeach
                 </select>
+                <br>
+                {{ $errors->first('course_code_prefix', '<span class="font-color-maroon error"> :message </span>') }}
 
                 <br>
+                <input name="course_code_suffix" type="text" maxlength="4" placeholder="(ex. 2B03)" size="9" {{ Input::old('course_code_suffix') ? 'value="' . e(Input::old('course_code_suffix')) . '"' : '' }}>
                 <br>
-                <input name="course_code" type="text" placeholder="(ex. 2B03)" size="9" {{ Input::old('course_code') ? 'value="' . e(Input::old('course_code')) . '"' : '' }} maxlength="4">
-                <br>
-                {{ $errors->first('course_code', '<span class="font-color-maroon error"> :message </span>') }}      
+                {{ $errors->first('course_code_suffix', '<span class="font-color-maroon error"> :message </span>') }}
             </div>
           </div>
 
@@ -80,11 +82,15 @@
             <div class="col-md-6">
                 Description
                 <br>
-                  <textarea name="description" cols="80" rows="10" placeholder="(ex. This is a mint condition book. I bought it and never used it. Call me for price.")>{{ Input::old('description') ? e(Input::old('description')) : '' }}</textarea>
+                <span class="custom-font-alpha"> Note: There is a 400 character limit </span>
+                <br>
+                  <textarea name="description" cols="80" rows="10" maxlength="400" placeholder="(ex. This is a mint condition book. I bought it and never used it. Call me for price.")>{{ Input::old('description') ? e(Input::old('description')) : '' }}</textarea>
              </div>
 
             <div class="col-md-6">
                 Image URL
+                <br>
+                <span class="custom-font-alpha"> Leaving it blank will result in a default image </span>
                 <br>
                 <input type="text" name="image" placeholder="(ex. http://goo.gl/d2fXqi)" size="30" {{ Input::old('image') ? 'value="' . e(Input::old('image')) . '"' : '' }}>
                 <br>
@@ -156,6 +162,7 @@
         </div>
 
         <br>
+        {{ Form::token() }}
 
     </form>
 
