@@ -14,7 +14,7 @@
     elseif ($env == "db") 
     {
         $ENV =[
-            'DB_HOST' => ' 107.170.101.23',
+            'DB_HOST' => '107.170.101.23',
             'DB_NAME' => 'musbe',
             'DB_USERNAME' => 'forge',
             'DB_PASSWORD' => 'SQmEr5lIXUqKlGQ0UJPj'
