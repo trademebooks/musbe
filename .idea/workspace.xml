@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e12c20-8f3f-4b91-9c1e-4745a1f98c17" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bookshelf.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\css\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\images\bookshelf.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\images\home.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\images\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\images\post.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\jumbotron.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\github\musbe\musbe-rawhtml\post.html" afterPath="" />
     </list>
     <ignored path="musbe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +43,26 @@
     <favorites_list name="musbe" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="6" selection-start="423" selection-end="423" vertical-scroll-proportion="-9.225806" vertical-offset="0" max-vertical-offset="528">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="12" selection-start="138" selection-end="138" vertical-scroll-proportion="0.26435247" vertical-offset="0" max-vertical-offset="770">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -286,15 +324,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16907217" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -569,23 +607,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="137" selection-end="137" vertical-scroll-proportion="0.26435247" vertical-offset="0" max-vertical-offset="770">
+        <state line="14" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.41121495" vertical-offset="0" max-vertical-offset="4532">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="423" selection-end="423" vertical-scroll-proportion="0.38184246" vertical-offset="0" max-vertical-offset="749">
+        <state line="13" column="6" selection-start="423" selection-end="423" vertical-scroll-proportion="-9.225806" vertical-offset="0" max-vertical-offset="528">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+    <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.41121495" vertical-offset="0" max-vertical-offset="4532">
+        <state line="9" column="12" selection-start="138" selection-end="138" vertical-scroll-proportion="0.26435247" vertical-offset="0" max-vertical-offset="770">
           <folding />
         </state>
       </provider>
