@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41e12c20-8f3f-4b91-9c1e-4745a1f98c17" name="Default" comment="" />
+    <list default="true" id="41e12c20-8f3f-4b91-9c1e-4745a1f98c17" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="musbe.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,16 +28,7 @@
       <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.121715076" vertical-offset="924" max-vertical-offset="2882">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/local/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="528">
+            <state line="46" column="0" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.3305671" vertical-offset="773" max-vertical-offset="2882">
               <folding />
             </state>
           </provider>
@@ -44,7 +37,7 @@
       <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="77" selection-end="77" vertical-scroll-proportion="-2.8387096" vertical-offset="0" max-vertical-offset="1078">
+            <state line="5" column="5" selection-start="83" selection-end="83" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="1078">
               <folding />
             </state>
           </provider>
@@ -312,7 +305,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -604,14 +597,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="77" selection-end="77" vertical-scroll-proportion="-2.8387096" vertical-offset="0" max-vertical-offset="1078">
+        <state line="5" column="5" selection-start="83" selection-end="83" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="1078">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.121715076" vertical-offset="924" max-vertical-offset="2882">
+        <state line="46" column="0" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.3305671" vertical-offset="773" max-vertical-offset="2882">
           <folding />
         </state>
       </provider>
