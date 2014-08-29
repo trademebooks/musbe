@@ -29,4 +29,22 @@ class MailersController extends \BaseController {
 
         return Redirect::home();
     }
+
+    public function contactMe()
+    {
+        
+        $data = [
+            'body' => Input::get('body'),
+            'subject' => Input::get('subject'),
+            'email' => Input::get('email'),
+        ];
+
+        $this->userMailer->contactMe($data);
+
+        Flash::success('Your Message has been Sent! We will get back to you shortly!');
+
+        return Redirect::home();
+        
+    }
+
 }

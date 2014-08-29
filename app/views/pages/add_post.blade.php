@@ -12,10 +12,14 @@
     <div class="row">
 
         <div class="col-md-3">
-            <a href="{{ URL::route('books.create') }}"><img src="{{ asset('custom_files/images/textbook_icon.png') }}" height="200" width="200"></a>
+            <a href="{{ URL::route('books.create') }}">
+                <img src="{{ asset('custom_files/images/textbook_icon.png') }}" height="200" width="200">
+            </a>
         </div>
         <div class="col-md-3">
-            <a href=""><img src="{{ asset('custom_files/images/notes_icon.png') }}" height="200" width="200"></a>
+            <a href="">
+                <img src="{{ asset('custom_files/images/notes_icon.png') }}" height="200" width="200">
+            </a>
         </div>
 
         <div class="col-md-3">
