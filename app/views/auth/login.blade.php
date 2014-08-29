@@ -26,6 +26,11 @@
 
 		<input class="custom-button-alpha background-color-maroon" type="submit" value="Login">
 
+        <br><br>
+
+        <div>
+            <a href="{{ url('/password/remind') }}"> Forgot Password </a>
+        </div>
 		{{ Form::token() }}
 	</form>
 
