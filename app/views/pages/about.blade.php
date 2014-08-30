@@ -18,7 +18,7 @@
 		</p>
 
 		<p>
-			<h3 class="font-weight-bold font-color-maroon"> Seadrique Mosville</h3>
+			<h3 class="font-weight-bold font-color-maroon"> Cedric Mosdell </h3>
 
 			<i class="font-size-em-10"> Head Graphics Designer </i>
 		</p>
