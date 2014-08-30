@@ -1,4 +1,4 @@
-@extends('layouts.sessions.login')
+@extends('layouts.sessions.password_reset')
 
 @section('content')
 

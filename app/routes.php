@@ -18,6 +18,11 @@ Route::get('/contact', [
 	'uses' => 'PagesController@contact'
 ]);
 
+Route::get('/terms', [
+	'as' => 'terms',
+	'uses' => 'PagesController@terms'
+]);
+
 Route::get('/add-post', [
     'as' => 'add_post',
     'uses' => 'PagesController@addPost'
@@ -62,6 +67,12 @@ Route::group(['before' => 'guest'], function()
             'as' => 'contact-user',
             'uses' => 'MailersController@contactUser'
         ]);
+
+        Route::post('/contact-me', [
+            'as' => 'contact-me',
+            'uses' => 'MailersController@contactMe'
+        ]);
+
 	});
 });
 

@@ -25,4 +25,15 @@ class UserMailer extends Mailer {
             $message->setBody($data['body']);
         });
     }
+
+    public function contactMe($data)
+    {
+        Mail::queue([], $data, function($message) use ($data)
+        {
+            $message->from($data['email']);
+            $message->to('yichenzhu1337@gmail.com');
+            $message->subject($data['subject']);
+            $message->setBody($data['body']);
+        });
+    }
 }

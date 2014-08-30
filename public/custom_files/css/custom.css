@@ -274,6 +274,17 @@ img {
 	background-size: 100%;
 }
 
+.background-password-remind
+{
+	background-image: url(../images/password_remind.jpg);
+	background-size: 100%;
+}
+
+.background-password-reset
+{
+	background-image: url(../images/password_reset.jpg);
+	background-size: 100%;
+}
 /* Backgrounds and Jumbotrons end */
 
 

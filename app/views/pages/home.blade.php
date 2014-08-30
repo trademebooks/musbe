@@ -9,7 +9,7 @@
                 <div class="well">
                     <div class="thumbnail">
                         <img src="{{ $book->image }}" alt="...">
-                        <div class="label label-success price background-color-maroon"><sup>$</sup>{{ $book->price }}</div>
+                        <div class="label label-success price"><sup>$</sup>{{ $book->price }}</div>
                         <div class="caption">
                             <h2 class="text-center"> {{ $book->title }} </h2>
 
@@ -88,6 +88,7 @@
 
                                 <div class="form-group">
                                     <img class="phone-button-size" src="{{ asset('custom_files/images/phone_icon.png') }}" alt="phone icon">
+                                    &nbsp;
                                     <span> {{ $book->phone_number }} </span>
                                 </div>
 
