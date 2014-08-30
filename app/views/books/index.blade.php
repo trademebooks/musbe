@@ -55,7 +55,7 @@
                             <div class="well">
                                 <div class="thumbnail">
                                     <img src="{{ $book->image }}" alt="...">
-                                    <div class="label label-success price background-color-maroon"><sup>$</sup>{{ $book->price }}</div>
+                                    <div class="label label-success price"><sup>$</sup>{{ $book->price }}</div>
                                     <div class="caption">
                                         <h2 class="text-center"> {{ $book->title }} </h2>
 
