@@ -8,7 +8,7 @@
 
     @include('partials/nav')
 
-    <div class="jumbotron jumbotron-post">
+    <div class="jumbotron jumbotron-about">
 
       <br><br>
       <br><br>
