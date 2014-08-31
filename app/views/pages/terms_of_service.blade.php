@@ -138,6 +138,10 @@
         We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. 
     </p>    
 
+    <p>
+        * We are in no way affiliated with McMaster University
+    </p>
+
     <h2> External links and Credits </h2>
 
     <p>
