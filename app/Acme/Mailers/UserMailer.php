@@ -21,8 +21,8 @@ class UserMailer extends Mailer {
         {
             $message->from($data['auth_email'], $data['auth_username']);
             $message->to($data['receiver_email'], $data['receiver_username']);
-            $message->subject($data['subject']);
-            $message->setBody($data['body']);
+            $message->subject('MUSBE: ' . $data['subject']);
+            $message->setBody('<h4> This is a reply from MUSBE. </h4>' . $data['body']);
         });
     }
 
