@@ -1,19 +1,30 @@
 <footer class="row background-color-maroon text-center padding10">
 
-  <div class="col-md-3">
+  <div class="col-md-2">
     MUSBE &copy; 2014
   </div>
 
-  <div class="col-md-3">
+  <div class="col-md-2">
     <a href="{{ route('terms') }}"> Terms of Service </a>
   </div>
 
-  <div class="col-md-3">
+  <div class="col-md-2">
     <a href="{{ route('about') }}"> About Us </a>
   </div>
 
-  <div class="col-md-3">
+  <div class="col-md-2">
     <a href="" data-toggle="modal" data-target="#contactModal"> Contact Us </a>
+  </div>
+
+  <div class="col-md-4">
+    <a href="https://www.facebook.com/pages/McMaster-Used-Student-Book-Exchange-MUSBE/643109775797043?ref=hl"><img src="{{ asset(custom_files/images/social_media_icons/facebook.png) }}" class="social_media"></a>
+    <a href="https://twitter.com/mcmusbe"><img src="{{ asset(custom_files/images/social_media_icons/twitter.png" class="social_media) }}"></a>
+    <a href="https://plus.google.com/b/100895081310726584711/100895081310726584711/posts"><img src="{{ asset(custom_files/images/social_media_icons/google-plus.png" class="social_media) }}"></a>
+    <!--
+    <a href=""><img src="images/social_media_icons/linkedin.png" class="social_media"></a>
+    <a href=""><img src="images/social_media_icons/youtube.png" class="social_media"></a>
+    <a href=""><img src="images/social_media_icons/github.png" class="social_media"></a>
+    -->
   </div>
 
 </footer>

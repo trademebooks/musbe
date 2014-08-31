@@ -425,3 +425,8 @@ th{
   background-color: maroon;
   border-color: maroon;
 }
+
+.social_media{
+    height: 50px;
+    width: 50px;
+}
