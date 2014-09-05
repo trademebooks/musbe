@@ -38,6 +38,11 @@ class PagesController extends BaseController {
 		return View::make('pages.contact');
 	}
 
+    public function terms()
+    {
+        return View::make('pages.terms_of_service');
+    }
+
     public function addPost()
     {
         return View::make('pages.add_post');

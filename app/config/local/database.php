@@ -1,6 +1,6 @@
 <?php
 
-    $env = "d"; //p - production, d - development, m - migrate db
+    $env = "p"; //p - production, d - development, m - migrate db
 
     if($env == "p")
     {

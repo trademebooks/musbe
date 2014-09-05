@@ -269,11 +269,29 @@ img {
 	margin-bottom: -20px;
 }
 
+.jumbotron-about{
+	background: #f6f6f6 url(../images/about.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: -20px;
+}
+
 .background-404{
 	background-image: url(../images/404.png);
 	background-size: 100%;
 }
 
+.background-password-remind
+{
+	background-image: url(../images/password_remind.jpg);
+	background-size: 100%;
+}
+
+.background-password-reset
+{
+	background-image: url(../images/password_reset.jpg);
+	background-size: 100%;
+}
 /* Backgrounds and Jumbotrons end */
 
 
@@ -406,4 +424,9 @@ th{
   cursor: default;
   background-color: maroon;
   border-color: maroon;
+}
+
+.social_media{
+    height: 30px;
+    width: 30px;
 }
