@@ -1,6 +1,3 @@
-/vendor
-
-/vendor
 /bootstrap/compiled.php
 composer.phar
 composer.lock
@@ -9,6 +6,6 @@ composer.lock
 .DS_Store
 Thumbs.db
 tests/node_modules/
-/public/bower_components
+
 
 tests/_output/*
