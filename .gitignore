@@ -1,2 +1,14 @@
+/vendor
 /.idea
 /vendor
+/bootstrap/compiled.php
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+tests/node_modules/
+/public/bower_components
+
+tests/_output/*
